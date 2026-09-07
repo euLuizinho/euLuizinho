@@ -1,0 +1,31 @@
+name: Generate Snake
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # roda a cada 6 horas
+  workflow_dispatch:         # permite rodar manualmente
+  push:
+    branches:
+      - main                # ajuste se sua branch principal tiver outro nome
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate the snake game from a github user contributions grid
+        uses: Platane/snk@v3
+        with:
+          github_user_name: euLuizinho
+          outputs: |
+            dist/github-snake-dark.svg?color_snake=%23FF1493&color_dots=%23f0f0f0,%23FF1493,%23c026d3,%237e22ce,%234c1d95&palette=github-dark
+            dist/github-snake.svg?color_snake=%23FF1493&color_dots=%23ebedf0,%23FF1493,%23c026d3,%237e22ce,%234c1d95
+
+      - name: Push output to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
