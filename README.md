@@ -35,14 +35,14 @@
 <img src="https://capsule-render.vercel.app/api?type=rect&color=FF1493&height=1" width="100%"/>
 <br>
 
-### 🔌 Conhecimento Técnico & Stack
+### 🔌 `> cat skills.txt`
 
 Explorando e aplicando diversas tecnologias durante a jornada acadêmica e em projetos pessoais:
 
 <div align="center">
   <br>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=kotlin,flutter,java,python,swift,docker,redis,rabbitmq,git,linux,figma&theme=dark" />
+    <img src="https://skillicons.dev/icons?i=kotlin,flutter,java,python,swift,docker,redis,rabbitmq,git,linux&theme=dark" />
   </a>
   <br><br>
   <img src="https://img.shields.io/badge/Prompt_Engineering-0d1117?style=flat-square&logo=openai&logoColor=FF1493&labelColor=0d1117&color=FF1493"/>
@@ -54,7 +54,7 @@ Explorando e aplicando diversas tecnologias durante a jornada acadêmica e em pr
 <img src="https://capsule-render.vercel.app/api?type=rect&color=FF1493&height=1" width="100%"/>
 <br>
 
-### 📂 Portfólio & Projetos de Estudo
+### 📂 `> ls ./portfolio`
 
 - **Startup ONE (TCC FIAP - Atual)**: Trabalho de conclusão focado na ideação e validação de um marketplace para mobilidade urbana. Utilizando ferramentas de IA generativa para auxiliar na pesquisa de mercado e prototipagem antes da codificação profunda.
 - **SkyLog**: Plataforma B2B (projeto acadêmico) focada em prevenção climática para frotas. O grande aprendizado aqui foi integrar telemetria com APIs da **NASA (DONKI/NEO)**, usando microsserviços em FastAPI (Python), RabbitMQ, Redis e front-end em Flutter.
@@ -64,10 +64,26 @@ Explorando e aplicando diversas tecnologias durante a jornada acadêmica e em pr
 <img src="https://capsule-render.vercel.app/api?type=rect&color=FF1493&height=1" width="100%"/>
 <br>
 
-### 📊 Analytics
+### 🎧 `> now_playing --spotify`
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=euLuizinho&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=FF1493&icon_color=FF1493&text_color=e2e8f0" alt="GitHub Stats"/>
+  <!-- COLE AQUI O LINK DO SPOTIFY QUE VAMOS GERAR -->
+  <img src="https://spotify-github-profile.vercel.app/api/view?uid=dizailuiz&cover_image=true&theme=novathem&bar_color=FF1493&bar_color_cover=false" alt="Spotify Now Playing" />
+</div>
+
+<br>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=FF1493&height=1" width="100%"/>
+<br>
+
+### 📊 `> ./generate_snake.sh`
+
+<div align="center">
+  <!-- A COBRINHA NEON VAI APARECER AQUI! -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/euLuizinho/euLuizinho/output/github-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/euLuizinho/euLuizinho/output/github-snake-dark.svg">
+    <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/euLuizinho/euLuizinho/output/github-snake-dark.svg">
+  </picture>
 </div>
 
 <br>
