@@ -40,7 +40,9 @@
 }
 ```
 
-> Acredito que tecnologia vai muito além de escrever código isolado. Meu diferencial está em **conectar dor de negócio, arquitetura de sistemas, dados, nuvem e Inteligência Artificial** para tirar produtos e automações do papel de ponta a ponta.
+<div align="center">
+  <img src="./assets/manifesto.svg" width="100%" alt="Visão sistêmica: conectar dor de negócio, arquitetura, dados, nuvem e IA de ponta a ponta" />
+</div>
 
 <div align="center">
   <img src="./assets/focus-grid.svg" width="100%" alt="Frentes de Atuação: IA Aplicada, Produto Tech, Dados & BI, Cloud Ops" />
@@ -54,7 +56,7 @@
 
 <div align="center">
   <p>
-    <b>◆ Autonomia Prática</b> <sub><i>(operação direta, arquitetura &amp; defesa técnica)</i></sub>
+    <img src="https://img.shields.io/badge/%E2%99%A1_AUTONOMIA_PR%C3%81TICA-opera%C3%A7%C3%A3o_%26_arquitetura-FF2E93?style=flat&labelColor=09090D" alt="Autonomia Prática" />
   </p>
   <img src="https://img.shields.io/badge/Lógica_%26_Fluxos-FF2E93?style=flat&labelColor=09090D" alt="Lógica e Fluxos" />
   <img src="https://img.shields.io/badge/IA_Aplicada_%26_Agentes-FF2E93?style=flat&logo=googlegemini&logoColor=FFFFFF&labelColor=09090D" alt="IA Aplicada e Agentes" />
@@ -68,7 +70,7 @@
   <br><br>
 
   <p>
-    <b>◇ Construído em Projetos</b> <sub><i>(aplicado em entregas reais &amp; consolidação contínua)</i></sub>
+    <img src="https://img.shields.io/badge/%E2%9C%A6_CONSTRU%C3%8DDO_EM_PROJETOS-entregas_reais_%26_consolida%C3%A7%C3%A3o-2A2A35?style=flat&labelColor=09090D" alt="Construído em Projetos" />
   </p>
   <img src="https://img.shields.io/badge/Python_%26_FastAPI-2A2A35?style=flat&logo=python&logoColor=F472B6&labelColor=09090D" alt="Python e FastAPI" />
   <img src="https://img.shields.io/badge/AWS_Serverless_(Lambda/DDB/EC2)-2A2A35?style=flat&logoColor=F472B6&labelColor=09090D" alt="AWS Serverless" />
@@ -91,22 +93,37 @@
 
 ### ✦ `> ls ./portfolio`
 
-| Projeto | Foco &amp; Impacto | Arquitetura &amp; Stack | Status / Links |
-| :--- | :--- | :--- | :--- |
-| **◆ HexaGo** *(Challenge C6 Bank × FIAP)* | Mapa de Cultura com *Privacy by Design* (k-anonimato ≥ 5, vedação de ranking individual) e fila *Human-in-the-Loop* (`< 0.85`). | FastAPI, Sanitização LGPD (Regex + hash salgado), Azure OpenAI (JSON Mode), React/Recharts, SQLite3 &amp; 5 diagramas Mermaid | *Sprint 2 · Documentado* |
-| **◆ Sprint Zero** *(TCC FIAP • Startup One)* | Plataforma conectando pequenos negócios a squads multidisciplinares com IA, papel de Squad Lead/GP e portfólio verificável. | Produto, SWOT, 5 Forças de Porter, Agile Canvas, 28 features (`F01`–`F28`), *Unit Economics* &amp; ABNT | *Em validação* |
-| **◆ CitizenTech Cloud** *(GS 2026.2 Solo · ODS 6)* | API REST Serverless de denúncias de vazamento de água com proteção de CPF nas leituras e testes ponta a ponta via `cURL`. | AWS Lambda (`boto3`/Python), API Gateway, DynamoDB (`ConditionExpression`) &amp; EC2 Ubuntu | *Entrega AWS 4SIZ* |
-| **◆ CitizenTech DW** *(GS 2026.2 Solo · Analytics)* | Data Mart dimensional para impacto social com cálculo de *Sizing* (24 B/linha, projeção 7,3M linhas/ano ≈ 167 MB). | Modelagem *Star Schema* (`FATO_ATENDIMENTO` + 4 dims), Volumetria &amp; SQL Analítico | *Entrega DW 4SIZ* |
-| **◇ Zeladoria Urbana (YOLOv8)** *(GS 2026.2 Solo)* | Detecção automatizada de buracos em vias urbanas para apoio à triagem municipal (ODS 9 e 11). | Python, YOLOv8n (`ultralytics`), OpenCV, Matplotlib &amp; Pandas | [`GS_Cognitive_1S`](https://github.com/euLuizinho/GS_Cognitive_1S) |
-| **◇ Monitor Hídrico iOS** *(GS 2026.2 · Nota 100/100)* | Simulador residencial de consumo de água per capita e projeção de metas em ambiente nativo Apple. | Swift, UIKit, Storyboard &amp; padrão MVC | *Nota 100/100* |
-| **◇ SkyLog Ecosystem** *(GS 2026.1 · Premiado 80+)* | Alertas rodoviários e monitoramento espacial via APIs da NASA (EONET/DONKI/NEO); carga k6 com **p95 de 150ms**. | Android (Kotlin/Compose/MVVM/Koin), FastAPI, RabbitMQ, Redis 7, Docker, Nginx &amp; Flutter/Firestore | [`Kotlin`](https://github.com/euLuizinho/SkyLog-Kotlin) · [`Cloud`](https://github.com/Lucas-FP7/SkyLog) · [`Flutter`](https://github.com/euLuizinho/SkyLog-Flutter) · [`Demo`](https://youtu.be/oWIz45x7whg) |
-| **◇ PDI Blackjack &amp; Muro 3D** *(Visão Clássica)* | Arbitragem determinística de cartas a **&gt;30 FPS** em 1080p **sem Deep Learning**, mais jogo via webcam em tempo real. | Python, OpenCV, NumPy, espaço HSV, morfologia matemática &amp; contornos | [`CP3_CognitiveComputing`](https://github.com/euLuizinho/CP3_CognitiveComputing) |
-| **◇ CyberSides** *(TCC ETEC 2021 + Remake)* | Portal educativo de cibersegurança com simulador interativo de detecção de phishing. | HTML/CSS/JS *(original)* · React &amp; Tailwind CSS *(Remake 2026)* | *Remake 2026* |
+<div align="center">
+  <img src="./assets/portfolio-core.svg" width="100%" alt="Destaques de Portfólio: HexaGo, Sprint Zero, CitizenTech Cloud, CitizenTech DW" />
+</div>
+
+<br>
+
+<div align="center">
+  <img src="./assets/portfolio-labs.svg" width="100%" alt="Ecossistema de Projetos e Labs: SkyLog, YOLOv8, iOS Swift, PDI Blackjack, CyberSides" />
+</div>
+
+<div align="center">
+  <a href="https://github.com/euLuizinho/SkyLog-Kotlin"><img src="https://img.shields.io/badge/%E2%9C%A6_SkyLog-Kotlin_Android-FF2E93?style=flat&logo=kotlin&logoColor=FFFFFF&labelColor=09090D" alt="SkyLog Kotlin" /></a>
+  <a href="https://github.com/Lucas-FP7/SkyLog"><img src="https://img.shields.io/badge/%E2%9C%A6_SkyLog-Cloud_Backend-FFFFFF?style=flat&logo=fastapi&logoColor=FF2E93&labelColor=09090D" alt="SkyLog Cloud" /></a>
+  <a href="https://github.com/euLuizinho/SkyLog-Flutter"><img src="https://img.shields.io/badge/%E2%9C%A6_SkyLog-Flutter_App-2A2A35?style=flat&logo=flutter&logoColor=F472B6&labelColor=09090D" alt="SkyLog Flutter" /></a>
+  <a href="https://youtu.be/oWIz45x7whg"><img src="https://img.shields.io/badge/%E2%99%A1_SkyLog-Demo_Video-FF2E93?style=flat&logo=youtube&logoColor=FFFFFF&labelColor=09090D" alt="SkyLog Demo" /></a>
+  <a href="https://github.com/euLuizinho/GS_Cognitive_1S"><img src="https://img.shields.io/badge/%E2%99%A1_YOLOv8-GS__Cognitive__1S-F472B6?style=flat&logo=github&logoColor=FFFFFF&labelColor=09090D" alt="YOLOv8 Repo" /></a>
+  <a href="https://github.com/euLuizinho/CP3_CognitiveComputing"><img src="https://img.shields.io/badge/%E2%9C%A6_PDI_%26_Muro_3D-CP3__Cognitive-2A2A35?style=flat&logo=opencv&logoColor=F9A8D4&labelColor=09090D" alt="PDI Repo" /></a>
+</div>
+
+<br>
 
 <details>
 <summary><code>&gt; cat ./portfolio/extras.log</code> — Projetos complementares de formação</summary>
 
-- **TalentHub (GS 2025 — Repo Privado `fiap-gs-2025-talenthub-14`):** plataforma para *Future of Work* (upskilling e recrutamento ético com IA para detecção de viés em vagas), estruturada com 4 microsserviços em **Java Spring Boot**, frontend, banco de dados e Docker Compose.
+<br>
+
+<img src="https://img.shields.io/badge/%E2%99%A1_TalentHub_(GS_2025)-Repo_Privado_fiap--gs--2025--talenthub--14-FF2E93?style=flat&labelColor=09090D" alt="TalentHub" />
+<img src="https://img.shields.io/badge/4_Microsservi%C3%A7os-Java_Spring_Boot-2A2A35?style=flat&logo=springboot&logoColor=F472B6&labelColor=09090D" alt="Java Spring Boot" />
+<img src="https://img.shields.io/badge/Docker_Compose-IA_%C3%89tica_%26_Future_of_Work-FFFFFF?style=flat&logo=docker&logoColor=FF2E93&labelColor=09090D" alt="Docker Compose" />
+
+> Plataforma para *Future of Work* (upskilling e recrutamento ético com IA para detecção de viés em vagas), estruturada com 4 microsserviços em **Java Spring Boot**, frontend, banco de dados e Docker Compose.
 
 </details>
 
@@ -116,24 +133,29 @@
 
 ### ♡ `> cat education.log`
 
-| Formação | Instituição | Período | Destaques &amp; Base |
-| :--- | :--- | :--- | :--- |
-| **Bacharelado em Sistemas de Informação** | **FIAP** *(Turma SIZ)* | Ago/2023 – Jul/2027 *(Em andamento)* | Premiado na GS 2026.1 (80+ em todas as disciplinas), nota **100/100** em iOS Swift (GS 2026.2) e entregas individuais em Cloud AWS, DW e YOLOv8. |
-| **Técnico em Informática para Internet** | **ETEC Parque Belém** | 2019 – 2021 *(Concluído · 4.440h)* | Formação técnica integrada ao Ensino Médio (1.440h técnicas + 120h TCC *CyberSides*), consolidando lógica, web, redes e bancos de dados desde 2019. |
+<div align="center">
+  <img src="./assets/education.svg" width="100%" alt="Formação Acadêmica: FIAP Sistemas de Informação e ETEC Parque Belém" />
+</div>
+
+<br>
 
 <details>
 <summary><code>&gt; ls ./certificados</code> — Certificações &amp; cursos complementares</summary>
 
-- **Full Cycle Tech Week: AI for Devs** — Full Cycle *(Jun/2026 · 8h)*
-- **DevOps &amp; Agile Culture** — FIAP *(Mai/2026)*
-- **Gestão de Infraestrutura de TI** — FIAP *(Mai/2026)*
-- **Estruturas de Computadores** — FIAP *(Mai/2026)*
-- **Linux Fundamentos** — FIAP *(Mai/2025)*
-- **Big Data** — FIAP *(Mai/2025)*
-- **Acelerador de Carreira com Power BI** — Daxus *(Jul/2024)*
-- **Java Fundamentos** — FIAP *(Mai/2024)*
-- **Aprender a Aprender: Técnicas para seu Autodesenvolvimento** — Alura *(Jul/2024)*
-- **Formação Social e Sustentabilidade** — FIAP *(Mai/2024)*
+<br>
+
+<div align="center">
+  <img src="https://img.shields.io/badge/%E2%99%A1_Full_Cycle-AI_for_Devs_(Jun%2F2026_%C2%B7_8h)-FF2E93?style=flat&labelColor=09090D" alt="AI for Devs" />
+  <img src="https://img.shields.io/badge/%E2%9C%A6_FIAP-DevOps_%26_Agile_(Mai%2F2026)-FFFFFF?style=flat&labelColor=09090D" alt="DevOps and Agile" />
+  <img src="https://img.shields.io/badge/%E2%99%A1_FIAP-Infraestrutura_de_TI_(Mai%2F2026)-FF2E93?style=flat&labelColor=09090D" alt="Infraestrutura de TI" />
+  <img src="https://img.shields.io/badge/%E2%9C%A6_FIAP-Estruturas_de_Computadores_(Mai%2F2026)-2A2A35?style=flat&labelColor=09090D" alt="Estruturas de Computadores" />
+  <img src="https://img.shields.io/badge/%E2%99%A1_FIAP-Linux_Fundamentos_(Mai%2F2025)-F472B6?style=flat&labelColor=09090D" alt="Linux Fundamentos" />
+  <img src="https://img.shields.io/badge/%E2%9C%A6_FIAP-Big_Data_(Mai%2F2025)-FFFFFF?style=flat&labelColor=09090D" alt="Big Data" />
+  <img src="https://img.shields.io/badge/%E2%99%A1_Daxus-Power_BI_(Jul%2F2024)-FF2E93?style=flat&labelColor=09090D" alt="Power BI" />
+  <img src="https://img.shields.io/badge/%E2%9C%A6_FIAP-Java_Fundamentos_(Mai%2F2024)-2A2A35?style=flat&labelColor=09090D" alt="Java Fundamentos" />
+  <img src="https://img.shields.io/badge/%E2%99%A1_Alura-Aprender_a_Aprender_(Jul%2F2024)-2A2A35?style=flat&labelColor=09090D" alt="Alura" />
+  <img src="https://img.shields.io/badge/%E2%9C%A6_FIAP-Forma%C3%A7%C3%A3o_Social_%26_Sustentabilidade_(Mai%2F2024)-2A2A35?style=flat&labelColor=09090D" alt="Formação Social" />
+</div>
 
 </details>
 
@@ -145,7 +167,7 @@
 
 <div align="center">
   <a href="https://open.spotify.com">
-    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=dizailuiz&cover_image=true&theme=novathem&bar_color=FF2E93&bar_color_cover=false" alt="Spotify Now Playing" />
+    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=dizailuiz&cover_image=true&theme=natemoo-re&show_offline=true&background_color=09090D&bar_color=FF2E93&bar_color_cover=false" alt="Spotify Now Playing" />
   </a>
 </div>
 

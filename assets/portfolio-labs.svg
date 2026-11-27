@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="332" viewBox="0 0 900 332">
+  <defs>
+    <linearGradient id="plBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08080D"/>
+      <stop offset="55%" stop-color="#14141C"/>
+      <stop offset="100%" stop-color="#2E1023"/>
+    </linearGradient>
+    <clipPath id="plClip"><rect x="1" y="1" width="898" height="330" rx="16"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#plClip)">
+    <rect width="900" height="332" fill="url(#plBg)"/>
+    <!-- Subtle Flowing Background Wave -->
+    <path d="M620,332 C715,245 795,290 900,190 L900,332 Z" fill="#FF2E93" opacity="0.08"/>
+    <path d="M680,332 C765,260 830,295 900,225" fill="none" stroke="#F472B6" stroke-width="1.6" opacity="0.32"/>
+
+    <!-- Row 1: SkyLog Ecosystem -->
+    <g>
+      <circle cx="32" cy="36" r="10" fill="#2A1120" stroke="#FF2E93" stroke-width="1.2"/>
+      <path d="M 32,29 Q 33.8,34.2 39,36 Q 33.8,37.8 32,43 Q 30.2,37.8 25,36 Q 30.2,34.2 32,29 Z" fill="#FF2E93"/>
+      <text x="54" y="34" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="800" fill="#FFFFFF">SkyLog Ecosystem</text>
+      <text x="190" y="34" font-family="'Segoe UI', sans-serif" font-size="11.5" fill="#F472B6">GS 2026.1</text>
+      <rect x="744" y="19" width="132" height="22" rx="11" fill="#FF2E93"/>
+      <text x="810" y="33.5" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="800" fill="#FFFFFF">✦ PREMIADO 80+</text>
+      <text x="54" y="54" font-family="'Segoe UI', sans-serif" font-size="11.5" fill="#D4D4D8">Alertas rodoviários e monitoramento espacial via APIs da NASA (EONET/DONKI/NEO); carga k6 com <tspan fill="#FFFFFF" font-weight="700">p95 de 150ms</tspan>.</text>
+      <line x1="24" y1="68" x2="876" y2="68" stroke="#2D2332" stroke-width="1"/>
+    </g>
+
+    <!-- Row 2: Zeladoria Urbana (YOLOv8) -->
+    <g>
+      <circle cx="32" cy="100" r="10" fill="#1C1C26" stroke="#F472B6" stroke-width="1.2"/>
+      <g transform="translate(32, 99.5) scale(0.58)">
+        <path d="M 0,-3.5 C -2,-8.5 -10,-8 -10,-1.5 C -10,4.5 -3.5,8 0,11 C 3.5,8 10,4.5 10,-1.5 C 10,-8 2,-8.5 0,-3.5 Z" fill="none" stroke="#FFFFFF" stroke-width="2.0" stroke-linejoin="round"/>
+      </g>
+      <text x="54" y="98" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="800" fill="#FFFFFF">Zeladoria Urbana (YOLOv8)</text>
+      <text x="256" y="98" font-family="'Segoe UI', sans-serif" font-size="11.5" fill="#F9A8D4">GS 2026.2 Solo</text>
+      <rect x="744" y="83" width="132" height="22" rx="11" fill="#2A2A35" stroke="#F472B6" stroke-width="0.9"/>
+      <text x="810" y="97.5" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10" font-weight="700" fill="#F9A8D4">YOLOv8 · ODS 9/11</text>
+      <text x="54" y="118" font-family="'Segoe UI', sans-serif" font-size="11.5" fill="#D4D4D8">Detecção automatizada de buracos em vias urbanas com Python, <tspan fill="#FFFFFF" font-weight="600">YOLOv8n (ultralytics)</tspan>, OpenCV, Matplotlib &amp; Pandas.</text>
+      <line x1="24" y1="132" x2="876" y2="132" stroke="#2D2332" stroke-width="1"/>
+    </g>
+
+    <!-- Row 3: Monitor Hídrico iOS -->
+    <g>
+      <circle cx="32" cy="164" r="10" fill="#1C1C26" stroke="#FFFFFF" stroke-width="1.2"/>
+      <path d="M 32,157 Q 33.8,162.2 39,164 Q 33.8,165.8 32,171 Q 30.2,165.8 25,164 Q 30.2,162.2 32,157 Z" fill="none" stroke="#FFFFFF" stroke-width="1.3"/>
+      <text x="54" y="162" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="800" fill="#FFFFFF">Monitor Hídrico iOS</text>
+      <text x="206" y="162" font-family="'Segoe UI', sans-serif" font-size="11.5" fill="#F9A8D4">GS 2026.2</text>
+      <rect x="744" y="147" width="132" height="22" rx="11" fill="#FFFFFF"/>
+      <text x="810" y="161.5" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="800" fill="#09090D">♡ NOTA 100/100</text>
+      <text x="54" y="182" font-family="'Segoe UI', sans-serif" font-size="11.5" fill="#D4D4D8">Simulador residencial de consumo per capita e projeção de metas em ambiente nativo Apple (<tspan fill="#FFFFFF" font-weight="600">Swift, UIKit &amp; MVC</tspan>).</text>
+      <line x1="24" y1="196" x2="876" y2="196" stroke="#2D2332" stroke-width="1"/>
+    </g>
+
+    <!-- Row 4: PDI Blackjack & Muro 3D -->
+    <g>
+      <circle cx="32" cy="228" r="10" fill="#2A1120" stroke="#F9A8D4" stroke-width="1.2"/>
+      <g transform="translate(32, 227.5) scale(0.58)">
+        <path d="M 0,-3.5 C -2,-8.5 -10,-8 -10,-1.5 C -10,4.5 -3.5,8 0,11 C 3.5,8 10,4.5 10,-1.5 C 10,-8 2,-8.5 0,-3.5 Z" fill="none" stroke="#FF2E93" stroke-width="2.0" stroke-linejoin="round"/>
+      </g>
+      <text x="54" y="226" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="800" fill="#FFFFFF">PDI Blackjack &amp; Muro 3D</text>
+      <text x="242" y="226" font-family="'Segoe UI', sans-serif" font-size="11.5" fill="#F9A8D4">Visão Clássica</text>
+      <rect x="744" y="211" width="132" height="22" rx="11" fill="#F472B6"/>
+      <text x="810" y="225.5" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="10" font-weight="800" fill="#09090D">&gt;30 FPS · SEM DL</text>
+      <text x="54" y="246" font-family="'Segoe UI', sans-serif" font-size="11.5" fill="#D4D4D8">Arbitragem determinística de cartas em 1080p sem Deep Learning + jogo webcam (<tspan fill="#FFFFFF" font-weight="600">OpenCV, NumPy, HSV &amp; contornos</tspan>).</text>
+      <line x1="24" y1="260" x2="876" y2="260" stroke="#2D2332" stroke-width="1"/>
+    </g>
+
+    <!-- Row 5: CyberSides -->
+    <g>
+      <circle cx="32" cy="292" r="10" fill="#1C1C26" stroke="#A1A1AA" stroke-width="1.2"/>
+      <path d="M 32,285 Q 33.8,290.2 39,292 Q 33.8,293.8 32,299 Q 30.2,293.8 25,292 Q 30.2,290.2 32,285 Z" fill="#F9A8D4"/>
+      <text x="54" y="290" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="800" fill="#FFFFFF">CyberSides</text>
+      <text x="144" y="290" font-family="'Segoe UI', sans-serif" font-size="11.5" fill="#F9A8D4">TCC ETEC 2021 + Remake</text>
+      <rect x="744" y="275" width="132" height="22" rx="11" fill="#2A2A35" stroke="#A1A1AA" stroke-width="0.9"/>
+      <text x="810" y="289.5" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10" font-weight="700" fill="#E4E4E7">REMAKE 2026</text>
+      <text x="54" y="310" font-family="'Segoe UI', sans-serif" font-size="11.5" fill="#D4D4D8">Portal educativo de cibersegurança e simulador de phishing (<tspan fill="#FFFFFF" font-weight="600">HTML/CSS/JS</tspan> original · <tspan fill="#F9A8D4" font-weight="600">React &amp; Tailwind CSS</tspan>).</text>
+    </g>
+  </g>
+  <rect x="1" y="1" width="898" height="330" rx="16" fill="none" stroke="#4A223A" stroke-width="1.3"/>
+</svg>

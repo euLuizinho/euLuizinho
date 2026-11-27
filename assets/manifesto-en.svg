@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="84" viewBox="0 0 900 84">
+  <defs>
+    <linearGradient id="mBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#09090D"/>
+      <stop offset="58%" stop-color="#171721"/>
+      <stop offset="100%" stop-color="#380E27"/>
+    </linearGradient>
+    <linearGradient id="mBar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF2E93"/>
+      <stop offset="55%" stop-color="#F472B6"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <clipPath id="mClip"><rect x="1" y="1" width="898" height="82" rx="14"/></clipPath>
+  </defs>
+  <g clip-path="url(#mClip)">
+    <rect width="900" height="84" fill="url(#mBg)"/>
+    <path d="M520,84 C650,58 770,12 900,32 L900,84 Z" fill="#FF2E93" opacity="0.10"/>
+    <path d="M590,84 C705,58 800,26 900,44" fill="none" stroke="#F472B6" stroke-width="1.6" opacity="0.45"/>
+    <circle cx="852" cy="42" r="24" fill="#FF2E93" opacity="0.14"/>
+    <rect x="20" y="16" width="5" height="52" rx="2.5" fill="url(#mBar)"/>
+    <g transform="translate(848, 42) rotate(-12) scale(0.95)">
+      <path d="M 0,-3.5 C -2,-8.5 -10,-8 -10,-1.5 C -10,4.5 -3.5,8 0,11 C 3.5,8 10,4.5 10,-1.5 C 10,-8 2,-8.5 0,-3.5 Z" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" opacity="0.82"/>
+    </g>
+    <path d="M 808,22 Q 810.2,28.8 817,31 Q 810.2,33.2 808,40 Q 805.8,33.2 799,31 Q 805.8,28.8 808,22 Z" fill="none" stroke="#FF2E93" stroke-width="1.3" stroke-linejoin="round"/>
+    <text x="42" y="34" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.2" fill="#E4E4E7">
+      Technology goes beyond isolated code — my strength is <tspan fill="#FFFFFF" font-weight="700">bridging business pain points, architecture, data &amp; AI</tspan>
+    </text>
+    <text x="42" y="57" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.2" fill="#F9A8D4">
+      to design and ship practical end-to-end solutions. <tspan fill="#A1A1AA" font-size="11.5" font-family="'Fira Code', monospace"> · systemic mindset</tspan>
+    </text>
+  </g>
+  <rect x="1" y="1" width="898" height="82" rx="14" fill="none" stroke="#4A223A" stroke-width="1.2"/>
+</svg>
