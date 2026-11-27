@@ -41,12 +41,12 @@
 
 <div align="center">
   <p><b>Frentes Principais &amp; Diferenciais</b></p>
-  <img src="https://img.shields.io/badge/Produto_%26_Neg%C3%B3cios_Tech-0d1117?style=flat-square&logo=jira&logoColor=FF1493&color=FF1493"/>
-  <img src="https://img.shields.io/badge/IA_Aplicada_%26_Agentes-0d1117?style=flat-square&logo=googlegemini&logoColor=FF1493&color=FF1493"/>
-  <img src="https://img.shields.io/badge/Prompt_Engineering-0d1117?style=flat-square&logo=openai&logoColor=FF1493&color=FF1493"/>
-  <img src="https://img.shields.io/badge/Data_Warehousing_%26_BI-0d1117?style=flat-square&logo=powerbi&logoColor=FF1493&color=FF1493"/>
-  <img src="https://img.shields.io/badge/SSH_%26_Redes_Linux-0d1117?style=flat-square&logo=gnubash&logoColor=FF1493&color=FF1493"/>
-  <img src="https://img.shields.io/badge/Arquitetura_%26_Mermaid-0d1117?style=flat-square&logo=mermaid&logoColor=FF1493&color=FF1493"/>
+  <img src="https://img.shields.io/badge/Produto_%26_Neg%C3%B3cios_Tech-0d1117?style=flat-square&logo=jira&logoColor=FF1493&labelColor=0d1117&color=FF1493"/>
+  <img src="https://img.shields.io/badge/IA_Aplicada_%26_Agentes-0d1117?style=flat-square&logo=googlegemini&logoColor=FF1493&labelColor=0d1117&color=FF1493"/>
+  <img src="https://img.shields.io/badge/Prompt_Engineering-0d1117?style=flat-square&logo=anthropic&logoColor=FF1493&labelColor=0d1117&color=FF1493"/>
+  <img src="https://img.shields.io/badge/Data_Warehousing_%26_BI-0d1117?style=flat-square&logo=postgresql&logoColor=FF1493&labelColor=0d1117&color=FF1493"/>
+  <img src="https://img.shields.io/badge/SSH_%26_Redes_Linux-0d1117?style=flat-square&logo=gnubash&logoColor=FF1493&labelColor=0d1117&color=FF1493"/>
+  <img src="https://img.shields.io/badge/Arquitetura_%26_Mermaid-0d1117?style=flat-square&logo=mermaid&logoColor=FF1493&labelColor=0d1117&color=FF1493"/>
   <br><br>
   <p><b>Ecossistema &amp; Tecnologias Exploradas em Projetos</b></p>
   <a href="https://skillicons.dev">
@@ -95,3 +95,4 @@
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF1493,50:2b071c,100:0d1117&height=90&section=footer" width="100%" alt="Footer Luiz Fabiano" />
+
