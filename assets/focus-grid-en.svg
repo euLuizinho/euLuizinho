@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="176" viewBox="0 0 900 176">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E0E13"/>
+      <stop offset="100%" stop-color="#171720"/>
+    </linearGradient>
+    <clipPath id="c1"><rect x="1" y="1" width="214" height="174" rx="10"/></clipPath>
+    <clipPath id="c2"><rect x="229" y="1" width="214" height="174" rx="10"/></clipPath>
+    <clipPath id="c3"><rect x="457" y="1" width="214" height="174" rx="10"/></clipPath>
+    <clipPath id="c4"><rect x="685" y="1" width="214" height="174" rx="10"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#c1)">
+    <rect x="1" y="1" width="214" height="174" rx="10" fill="url(#cardBg)"/>
+    <polygon points="150,175 215,110 215,175" fill="#FF2E93" opacity="0.12"/>
+    <rect x="1" y="1" width="214" height="3.5" fill="#FF2E93"/>
+  </g>
+  <rect x="1" y="1" width="214" height="174" rx="10" fill="none" stroke="#2F2F3C" stroke-width="1"/>
+  <text x="16" y="27" font-family="'Fira Code', monospace" font-size="10.5" fill="#FF2E93" font-weight="700">[01] // AI &amp; AGENTS</text>
+  <text x="16" y="51" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#FFFFFF" font-weight="700">Applied AI</text>
+  <line x1="16" y1="62" x2="199" y2="62" stroke="#24242F" stroke-width="1"/>
+  <text x="16" y="84" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#FF2E93">◆</tspan> Prompt &amp; Agent Flows</text>
+  <text x="16" y="106" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#FF2E93">◆</tspan> Azure OpenAI (JSON Mode)</text>
+  <text x="16" y="128" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#FF2E93">◆</tspan> LGPD &amp; Human-in-the-Loop</text>
+  <text x="16" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#FF2E93">◆</tspan> Vision (YOLOv8 / OpenCV)</text>
+
+  <g clip-path="url(#c2)">
+    <rect x="229" y="1" width="214" height="174" rx="10" fill="url(#cardBg)"/>
+    <polygon points="378,175 443,110 443,175" fill="#F472B6" opacity="0.12"/>
+    <rect x="229" y="1" width="214" height="3.5" fill="#F472B6"/>
+  </g>
+  <rect x="229" y="1" width="214" height="174" rx="10" fill="none" stroke="#2F2F3C" stroke-width="1"/>
+  <text x="244" y="27" font-family="'Fira Code', monospace" font-size="10.5" fill="#F472B6" font-weight="700">[02] // TECH PRODUCT</text>
+  <text x="244" y="51" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#FFFFFF" font-weight="700">Business &amp; Design</text>
+  <line x1="244" y1="62" x2="427" y2="62" stroke="#24242F" stroke-width="1"/>
+  <text x="244" y="84" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#F472B6">◆</tspan> Agile Canvas &amp; Discovery</text>
+  <text x="244" y="106" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#F472B6">◆</tspan> SWOT, Porter &amp; Backlog</text>
+  <text x="244" y="128" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#F472B6">◆</tspan> Unit Economics &amp; MVP</text>
+  <text x="244" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#F472B6">◆</tspan> Mermaid Architecture</text>
+
+  <g clip-path="url(#c3)">
+    <rect x="457" y="1" width="214" height="174" rx="10" fill="url(#cardBg)"/>
+    <polygon points="606,175 671,110 671,175" fill="#FFFFFF" opacity="0.10"/>
+    <rect x="457" y="1" width="214" height="3.5" fill="#FFFFFF"/>
+  </g>
+  <rect x="457" y="1" width="214" height="174" rx="10" fill="none" stroke="#2F2F3C" stroke-width="1"/>
+  <text x="472" y="27" font-family="'Fira Code', monospace" font-size="10.5" fill="#FFFFFF" font-weight="700">[03] // DATA &amp; BI</text>
+  <text x="472" y="51" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#FFFFFF" font-weight="700">Analytics &amp; DW</text>
+  <line x1="472" y1="62" x2="655" y2="62" stroke="#24242F" stroke-width="1"/>
+  <text x="472" y="84" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#FFFFFF">◆</tspan> Star Schema Modeling</text>
+  <text x="472" y="106" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#FFFFFF">◆</tspan> Storage Sizing &amp; Growth</text>
+  <text x="472" y="128" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#FFFFFF">◆</tspan> Analytical SQL &amp; KPIs</text>
+  <text x="472" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#FFFFFF">◆</tspan> Power BI &amp; DAX</text>
+
+  <g clip-path="url(#c4)">
+    <rect x="685" y="1" width="214" height="174" rx="10" fill="url(#cardBg)"/>
+    <polygon points="834,175 899,110 899,175" fill="#A1A1AA" opacity="0.12"/>
+    <rect x="685" y="1" width="214" height="3.5" fill="#A1A1AA"/>
+  </g>
+  <rect x="685" y="1" width="214" height="174" rx="10" fill="none" stroke="#2F2F3C" stroke-width="1"/>
+  <text x="700" y="27" font-family="'Fira Code', monospace" font-size="10.5" fill="#D4D4D8" font-weight="700">[04] // CLOUD OPS</text>
+  <text x="700" y="51" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#FFFFFF" font-weight="700">Infra &amp; Automation</text>
+  <line x1="700" y1="62" x2="883" y2="62" stroke="#24242F" stroke-width="1"/>
+  <text x="700" y="84" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#D4D4D8">◆</tspan> Linux, Shell &amp; SSH</text>
+  <text x="700" y="106" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#D4D4D8">◆</tspan> AWS (Lambda/DDB/EC2)</text>
+  <text x="700" y="128" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#D4D4D8">◆</tspan> Docker, Nginx &amp; Redis</text>
+  <text x="700" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#D4D4D8">◆</tspan> REST APIs, cURL &amp; Git</text>
+</svg>

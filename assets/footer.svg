@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="88" viewBox="0 0 900 88">
+  <defs>
+    <linearGradient id="fbg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#08080C"/>
+      <stop offset="50%" stop-color="#14141C"/>
+      <stop offset="100%" stop-color="#270D1D"/>
+    </linearGradient>
+    <linearGradient id="fwave" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2A2A35"/>
+      <stop offset="45%" stop-color="#FF2E93"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <clipPath id="fclip">
+      <rect x="1" y="1" width="898" height="86" rx="12"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#fclip)">
+    <rect width="900" height="88" fill="url(#fbg)"/>
+    <path d="M0,58 Q220,24 450,56 T900,38 L900,88 L0,88 Z" fill="#181822" opacity="0.75"/>
+    <path d="M0,64 Q260,34 520,62 T900,46" fill="none" stroke="url(#fwave)" stroke-width="2.5" opacity="0.7"/>
+    <polygon points="780,0 845,0 795,88 730,88" fill="#FF2E93" opacity="0.14"/>
+    <path d="M845,20 L847.5,27 L854.5,29.5 L847.5,32 L845,39 L842.5,32 L835.5,29.5 L842.5,27 Z" fill="#FFFFFF" opacity="0.85"/>
+    <path d="M55,22 L57,27 L62,29 L57,31 L55,36 L53,31 L48,29 L53,27 Z" fill="#FF2E93" opacity="0.85"/>
+
+    <text x="450" y="38" text-anchor="middle" font-family="'Fira Code', 'Cascadia Code', monospace" font-size="12" fill="#F4F4F5">
+      &gt; echo &quot;Conectando dor de negócio, arquitetura, dados e IA.&quot;
+    </text>
+    <text x="450" y="60" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="11.5" fill="#F472B6" font-weight="600">
+      ✦  Luiz Fabiano (@euLuizinho)  ·  São Paulo, Brasil  ✦
+    </text>
+
+    <path d="M14,22 L14,12 L24,12" fill="none" stroke="#FF2E93" stroke-width="1.4"/>
+    <path d="M886,66 L886,76 L876,76" fill="none" stroke="#FFFFFF" stroke-width="1.4"/>
+  </g>
+  <rect x="1" y="1" width="898" height="86" rx="12" fill="none" stroke="#2D2D39" stroke-width="1.2"/>
+</svg>

@@ -1,92 +1,115 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="200" viewBox="0 0 900 200">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220">
   <defs>
-    <!-- Background gradient: deep dark with purple/green/red aura -->
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0d1117"/>
-      <stop offset="30%" stop-color="#1a0a2e"/>
-      <stop offset="50%" stop-color="#0d1117"/>
-      <stop offset="70%" stop-color="#1a0a0a"/>
-      <stop offset="100%" stop-color="#0d1117"/>
+      <stop offset="0%" stop-color="#07070A"/>
+      <stop offset="55%" stop-color="#13131A"/>
+      <stop offset="100%" stop-color="#2B0C1F"/>
     </linearGradient>
-    <!-- Purple neon glow (Joker side) -->
-    <radialGradient id="glowPurple" cx="20%" cy="80%" r="40%">
-      <stop offset="0%" stop-color="#9B30FF" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#9B30FF" stop-opacity="0"/>
+    <radialGradient id="pinkAura" cx="84%" cy="55%" r="42%">
+      <stop offset="0%" stop-color="#FF2E93" stop-opacity="0.30"/>
+      <stop offset="55%" stop-color="#EC4899" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FF2E93" stop-opacity="0"/>
     </radialGradient>
-    <!-- Green neon glow (Joker accent) -->
-    <radialGradient id="glowGreen" cx="40%" cy="20%" r="30%">
-      <stop offset="0%" stop-color="#39FF14" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="#39FF14" stop-opacity="0"/>
-    </radialGradient>
-    <!-- Red neon glow (Harley side) -->
-    <radialGradient id="glowRed" cx="80%" cy="70%" r="40%">
-      <stop offset="0%" stop-color="#FF003C" stop-opacity="0.2"/>
-      <stop offset="100%" stop-color="#FF003C" stop-opacity="0"/>
-    </radialGradient>
-    <!-- Bottom wave -->
-    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#9B30FF"/>
-      <stop offset="40%" stop-color="#39FF14"/>
-      <stop offset="100%" stop-color="#FF003C"/>
+    <linearGradient id="ribbonMain" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF2E93" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#FF2E93"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
     </linearGradient>
-    <!-- Text glow filter -->
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <filter id="glowSuit">
-      <feGaussianBlur stdDeviation="1.5" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
+    <linearGradient id="accentBar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF2E93"/>
+      <stop offset="55%" stop-color="#F472B6"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <clipPath id="frameClip">
+      <rect x="1" y="1" width="898" height="218" rx="14"/>
+    </clipPath>
+    <style>
+      @keyframes pulseNode {
+        0%, 100% { opacity: 0.95; transform: scale(1); }
+        50% { opacity: 0.45; transform: scale(0.88); }
+      }
+      @keyframes twinkle {
+        0%, 100% { opacity: 0.9; }
+        50% { opacity: 0.35; }
+      }
+      .pulse { transform-box: fill-box; transform-origin: center; animation: pulseNode 2.8s ease-in-out infinite; }
+      .star { animation: twinkle 3.6s ease-in-out infinite; }
+    </style>
   </defs>
 
-  <!-- Background -->
-  <rect width="900" height="200" fill="url(#bg)"/>
-  <rect width="900" height="200" fill="url(#glowPurple)"/>
-  <rect width="900" height="200" fill="url(#glowGreen)"/>
-  <rect width="900" height="200" fill="url(#glowRed)"/>
+  <g clip-path="url(#frameClip)">
+    <!-- Base & Aura -->
+    <rect width="900" height="220" fill="url(#bg)"/>
+    <rect width="900" height="220" fill="url(#pinkAura)"/>
 
-  <!-- Subtle HA HA watermark -->
-  <text x="80" y="50" font-family="Impact, Arial Black, sans-serif" font-size="28" fill="#9B30FF" opacity="0.06" transform="rotate(-15, 80, 50)">HA!</text>
-  <text x="200" y="85" font-family="Impact, Arial Black, sans-serif" font-size="22" fill="#39FF14" opacity="0.05" transform="rotate(-12, 200, 85)">HA!</text>
-  <text x="680" y="45" font-family="Impact, Arial Black, sans-serif" font-size="26" fill="#FF003C" opacity="0.06" transform="rotate(10, 680, 45)">HA!</text>
-  <text x="790" y="78" font-family="Impact, Arial Black, sans-serif" font-size="20" fill="#FF003C" opacity="0.05" transform="rotate(15, 790, 78)">HA!</text>
-  <text x="380" y="38" font-family="Impact, Arial Black, sans-serif" font-size="18" fill="#9B30FF" opacity="0.04" transform="rotate(-8, 380, 38)">HA!</text>
+    <!-- Editorial HUD Grid -->
+    <line x1="0" y1="36" x2="900" y2="36" stroke="#23232E" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="220" stroke="#1E1E28" stroke-width="1"/>
+    <line x1="36" y1="186" x2="585" y2="186" stroke="#1C1C24" stroke-width="1"/>
 
-  <!-- Corner diamond accents -->
-  <!-- Top-left diamond (purple) -->
-  <polygon points="30,15 40,5 50,15 40,25" fill="none" stroke="#9B30FF" stroke-width="1" opacity="0.3"/>
-  <!-- Top-right diamond (red) -->
-  <polygon points="860,15 870,5 880,15 870,25" fill="none" stroke="#FF003C" stroke-width="1" opacity="0.3"/>
-  <!-- Bottom-left small diamond -->
-  <polygon points="20,180 26,174 32,180 26,186" fill="#9B30FF" opacity="0.15"/>
-  <!-- Bottom-right small diamond -->
-  <polygon points="868,180 874,174 880,180 874,186" fill="#FF003C" opacity="0.15"/>
+    <!-- Frutiger Metro Diagonal Slashes (Right Side) -->
+    <polygon points="625,36 695,36 605,220 535,220" fill="#1C1C26" opacity="0.72"/>
+    <polygon points="698,36 730,36 640,220 608,220" fill="#FF2E93" opacity="0.22"/>
+    <polygon points="736,36 746,36 656,220 646,220" fill="#FFFFFF" opacity="0.18"/>
 
-  <!-- Decorative suit symbols scattered -->
-  <text x="120" y="170" font-size="14" fill="#9B30FF" opacity="0.12" filter="url(#glowSuit)">♠</text>
-  <text x="260" y="185" font-size="12" fill="#39FF14" opacity="0.10" filter="url(#glowSuit)">♣</text>
-  <text x="640" y="175" font-size="13" fill="#FF003C" opacity="0.12" filter="url(#glowSuit)">♥</text>
-  <text x="770" y="185" font-size="14" fill="#FF003C" opacity="0.10" filter="url(#glowSuit)">♦</text>
+    <!-- Vector Bloom Noir Curves -->
+    <path d="M410,220 C540,170 640,225 760,132 C825,82 865,92 900,56 L900,220 Z" fill="#121218" opacity="0.88"/>
+    <path d="M490,220 C615,176 705,82 900,98" fill="none" stroke="url(#ribbonMain)" stroke-width="5.5" stroke-linecap="round"/>
+    <path d="M540,220 C650,188 745,108 900,124" fill="none" stroke="#F472B6" stroke-width="2" opacity="0.75"/>
+    <path d="M585,220 C690,196 785,138 900,148" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.35"/>
 
-  <!-- Main name -->
-  <text x="450" y="85" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="48" font-weight="700" fill="#ffffff" filter="url(#glow)">Luiz Fabiano</text>
+    <!-- Orbital Metro Rings & Glowing Core -->
+    <circle cx="792" cy="116" r="54" fill="none" stroke="#F472B6" stroke-width="1.2" opacity="0.35"/>
+    <circle cx="792" cy="116" r="36" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="5 5" opacity="0.38"/>
+    <circle cx="792" cy="116" r="21" fill="#FF2E93" opacity="0.22"/>
+    <circle cx="792" cy="116" r="9.5" fill="#FF2E93" class="pulse"/>
+    <circle cx="842" cy="148" r="18" fill="#FFFFFF" opacity="0.12"/>
+    <circle cx="732" cy="142" r="11" fill="none" stroke="#F9A8D4" stroke-width="1.4" opacity="0.75"/>
 
-  <!-- Subtitle -->
-  <text x="450" y="118" text-anchor="middle" font-family="'Fira Code', 'Cascadia Code', monospace" font-size="14" fill="#b0b0b0" letter-spacing="1">
-    <tspan fill="#9B30FF">♠</tspan>  Produto Tech  <tspan fill="#39FF14">•</tspan>  IA Aplicada  <tspan fill="#39FF14">•</tspan>  Automação  <tspan fill="#39FF14">•</tspan>  Dados  <tspan fill="#FF003C">♥</tspan>
-  </text>
+    <!-- Halftone Matrix -->
+    <g fill="#F472B6" opacity="0.34">
+      <circle cx="622" cy="58" r="2.2"/><circle cx="636" cy="58" r="2.2"/><circle cx="650" cy="58" r="2.2"/><circle cx="664" cy="58" r="2.2"/>
+      <circle cx="629" cy="70" r="1.8"/><circle cx="643" cy="70" r="1.8"/><circle cx="657" cy="70" r="1.8"/><circle cx="671" cy="70" r="1.8"/>
+      <circle cx="636" cy="82" r="1.4"/><circle cx="650" cy="82" r="1.4"/><circle cx="664" cy="82" r="1.4"/>
+    </g>
 
-  <!-- @euLuizinho handle -->
-  <text x="450" y="142" text-anchor="middle" font-family="'Fira Code', 'Cascadia Code', monospace" font-size="12" fill="#666" letter-spacing="2">@euLuizinho</text>
+    <!-- 4-Point Vector Stars (Vector Bloom) -->
+    <path d="M708,52 L712,63 L723,67 L712,71 L708,82 L704,71 L693,67 L704,63 Z" fill="#FFFFFF" class="star"/>
+    <path d="M852,54 L854.5,61 L861.5,63.5 L854.5,66 L852,73 L849.5,66 L842.5,63.5 L849.5,61 Z" fill="#FF2E93"/>
+    <path d="M674,174 L676,180 L682,182 L676,184 L674,190 L672,184 L666,182 L672,180 Z" fill="#F9A8D4" opacity="0.85"/>
 
-  <!-- Bottom wave/gradient line -->
-  <path d="M0,185 Q150,170 300,180 T600,175 T900,185 L900,200 L0,200 Z" fill="url(#waveGrad)" opacity="0.5"/>
-  <line x1="0" y1="195" x2="900" y2="195" stroke="url(#waveGrad)" stroke-width="1.5" opacity="0.4"/>
+    <!-- Top HUD Telemetry -->
+    <text x="32" y="23" font-family="'Fira Code', 'Cascadia Code', Consolas, monospace" font-size="11" fill="#A1A1AA" letter-spacing="0.8">
+      SYS.PROFILE // <tspan fill="#FFFFFF" font-weight="700">LUIZ_FABIANO</tspan>
+    </text>
+    <circle cx="624" cy="19" r="3.5" fill="#FF2E93" class="pulse"/>
+    <text x="635" y="23" font-family="'Fira Code', 'Cascadia Code', Consolas, monospace" font-size="11" fill="#F472B6" letter-spacing="0.8">
+      STATUS // ESTÁGIO_2027.1
+    </text>
+
+    <!-- Main Identity Block -->
+    <rect x="32" y="58" width="4.5" height="114" rx="2.2" fill="url(#accentBar)"/>
+    <text x="50" y="100" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="42" font-weight="800" fill="#FFFFFF" letter-spacing="-0.8">Luiz Fabiano</text>
+    <text x="50" y="128" font-family="'Fira Code', 'Cascadia Code', Consolas, monospace" font-size="13" fill="#F472B6" font-weight="600">
+      &gt; @euLuizinho  ·  FIAP SI (Jul/2027)  ·  Técnico ETEC
+    </text>
+    <text x="50" y="155" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="13.5" fill="#E4E4E7" font-weight="500">
+      IA Aplicada  <tspan fill="#FF2E93">◆</tspan>  Produto &amp; Negócios Tech  <tspan fill="#F472B6">◆</tspan>  Dados / BI  <tspan fill="#FFFFFF">◆</tspan>  Cloud Ops
+    </text>
+
+    <!-- Bottom Micro Chips -->
+    <rect x="50" y="172" width="114" height="22" rx="4" fill="#1A1A23" stroke="#323240" stroke-width="1"/>
+    <text x="107" y="187" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10.5" fill="#D4D4D8">SÃO PAULO · BR</text>
+    <rect x="172" y="172" width="144" height="22" rx="4" fill="#2A1120" stroke="#FF2E93" stroke-width="1"/>
+    <text x="244" y="187" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10.5" fill="#FBCFE8" font-weight="700">VISÃO SISTÊMICA</text>
+
+    <!-- Corner HUD Brackets -->
+    <path d="M14,22 L14,12 L24,12" fill="none" stroke="#FF2E93" stroke-width="1.6"/>
+    <path d="M886,22 L886,12 L876,12" fill="none" stroke="#FF2E93" stroke-width="1.6"/>
+    <path d="M14,198 L14,208 L24,208" fill="none" stroke="#F472B6" stroke-width="1.6"/>
+    <path d="M886,198 L886,208 L876,208" fill="none" stroke="#FFFFFF" stroke-width="1.6"/>
+  </g>
+
+  <!-- Outer Frame Border -->
+  <rect x="1" y="1" width="898" height="218" rx="14" fill="none" stroke="#2F2F3D" stroke-width="1.2"/>
 </svg>
