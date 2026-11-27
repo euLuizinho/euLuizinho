@@ -1,42 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="32" viewBox="0 0 900 32">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="40" viewBox="0 0 900 40">
   <defs>
-    <linearGradient id="divRibbon" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#181820" stop-opacity="0"/>
-      <stop offset="18%" stop-color="#3F3F4E"/>
-      <stop offset="40%" stop-color="#FF2E93"/>
+    <linearGradient id="pillBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#18181F" stop-opacity="0"/>
+      <stop offset="12%" stop-color="#2A2A35"/>
+      <stop offset="36%" stop-color="#FF2E93"/>
       <stop offset="50%" stop-color="#FFFFFF"/>
-      <stop offset="60%" stop-color="#F472B6"/>
-      <stop offset="82%" stop-color="#3F3F4E"/>
-      <stop offset="100%" stop-color="#181820" stop-opacity="0"/>
+      <stop offset="64%" stop-color="#F472B6"/>
+      <stop offset="88%" stop-color="#2A2A35"/>
+      <stop offset="100%" stop-color="#18181F" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="pillGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="15%" stop-color="#FF2E93" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FF2E93" stop-opacity="0.32"/>
+      <stop offset="85%" stop-color="#F472B6" stop-opacity="0"/>
     </linearGradient>
   </defs>
 
-  <!-- Flowing Metro ribbon divider -->
-  <path d="M 30,16 Q 230,9 450,16 T 870,16" fill="none" stroke="url(#divRibbon)" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Style 2 Signature Glowing Gradient Pill Divider -->
+  <rect x="70" y="14" width="760" height="12" rx="6" fill="url(#pillGlow)"/>
+  <rect x="30" y="17" width="840" height="6" rx="3" fill="url(#pillBar)"/>
 
-  <!-- Left halftone & hollow star -->
-  <circle cx="352" cy="16" r="1.8" fill="#A1A1AA" opacity="0.6"/>
-  <circle cx="364" cy="16" r="2.2" fill="#F472B6" opacity="0.8"/>
-  <path d="M 386,7 Q 387.5,14.5 395,16 Q 387.5,17.5 386,25 Q 384.5,17.5 377,16 Q 384.5,14.5 386,7 Z" fill="none" stroke="#FFFFFF" stroke-width="1.2"/>
+  <!-- Far Left / Right Micro Stars -->
+  <path d="M 18,12 Q 20,18 26,20 Q 20,22 18,28 Q 16,22 10,20 Q 16,18 18,12 Z" fill="none" stroke="#F472B6" stroke-width="1.2" opacity="0.65"/>
+  <path d="M 882,12 Q 884,18 890,20 Q 884,22 882,28 Q 880,22 874,20 Q 880,18 882,12 Z" fill="none" stroke="#F472B6" stroke-width="1.2" opacity="0.65"/>
 
-  <!-- Small left hollow heart -->
-  <g transform="translate(418, 17.5) rotate(-8) scale(0.62)">
-    <path d="M 0,6.5 C -1.5,4.8 -9,0 -9,-4.5 C -9,-7.8 -6.3,-10 -3.4,-10 C -1.6,-10 -0.4,-9.1 0,-7.8 C 0.4,-9.1 1.6,-10 3.4,-10 C 6.3,-10 9,-7.8 9,-4.5 C 9,0 1.5,4.8 0,6.5 Z" fill="none" stroke="#F9A8D4" stroke-width="1.9" stroke-linejoin="round"/>
+  <!-- Left Bloom Constellation -->
+  <circle cx="316" cy="20" r="2.2" fill="#A1A1AA" opacity="0.7"/>
+  <circle cx="330" cy="20" r="2.8" fill="#F9A8D4" opacity="0.9"/>
+  <g transform="translate(356, 20) rotate(-14) scale(0.72)">
+    <path d="M 0,-3.5 C -2,-8.5 -10,-8 -10,-1.5 C -10,4.5 -3.5,8 0,11 C 3.5,8 10,4.5 10,-1.5 C 10,-8 2,-8.5 0,-3.5 Z" fill="#0B0B10" stroke="#FF2E93" stroke-width="2.0" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>
+  <path d="M 386,8 Q 389,17 398,20 Q 389,23 386,32 Q 383,23 374,20 Q 383,17 386,8 Z" fill="#0B0B10" stroke="#FFFFFF" stroke-width="1.4" stroke-linejoin="round"/>
+  <g transform="translate(416, 20) rotate(-8) scale(0.68)">
+    <path d="M 0,-3.5 C -2,-8.5 -10,-8 -10,-1.5 C -10,4.5 -3.5,8 0,11 C 3.5,8 10,4.5 10,-1.5 C 10,-8 2,-8.5 0,-3.5 Z" fill="#0B0B10" stroke="#F9A8D4" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/>
   </g>
 
-  <!-- Centerpiece Hollow Heart -->
-  <circle cx="450" cy="16" r="13" fill="#0B0B10" stroke="#FF2E93" stroke-width="1.2"/>
-  <g transform="translate(450, 18) scale(0.88)">
-    <path d="M 0,6.5 C -1.5,4.8 -9,0 -9,-4.5 C -9,-7.8 -6.3,-10 -3.4,-10 C -1.6,-10 -0.4,-9.1 0,-7.8 C 0.4,-9.1 1.6,-10 3.4,-10 C 6.3,-10 9,-7.8 9,-4.5 C 9,0 1.5,4.8 0,6.5 Z" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Center Hollow Heart Medallion -->
+  <circle cx="450" cy="20" r="15" fill="#09090D" stroke="#FF2E93" stroke-width="1.6"/>
+  <g transform="translate(450, 19) scale(0.92)">
+    <path d="M 0,-3.5 C -2,-8.5 -10,-8 -10,-1.5 C -10,4.5 -3.5,8 0,11 C 3.5,8 10,4.5 10,-1.5 C 10,-8 2,-8.5 0,-3.5 Z" fill="none" stroke="#FFFFFF" stroke-width="1.65" stroke-linejoin="round" stroke-linecap="round"/>
   </g>
 
-  <!-- Small right hollow heart -->
-  <g transform="translate(482, 17.5) rotate(8) scale(0.62)">
-    <path d="M 0,6.5 C -1.5,4.8 -9,0 -9,-4.5 C -9,-7.8 -6.3,-10 -3.4,-10 C -1.6,-10 -0.4,-9.1 0,-7.8 C 0.4,-9.1 1.6,-10 3.4,-10 C 6.3,-10 9,-7.8 9,-4.5 C 9,0 1.5,4.8 0,6.5 Z" fill="none" stroke="#F9A8D4" stroke-width="1.9" stroke-linejoin="round"/>
+  <!-- Right Bloom Constellation -->
+  <g transform="translate(484, 20) rotate(8) scale(0.68)">
+    <path d="M 0,-3.5 C -2,-8.5 -10,-8 -10,-1.5 C -10,4.5 -3.5,8 0,11 C 3.5,8 10,4.5 10,-1.5 C 10,-8 2,-8.5 0,-3.5 Z" fill="#0B0B10" stroke="#F9A8D4" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"/>
   </g>
-
-  <!-- Right star & halftone -->
-  <path d="M 514,7 Q 515.5,14.5 523,16 Q 515.5,17.5 514,25 Q 512.5,17.5 505,16 Q 512.5,14.5 514,7 Z" fill="#FF2E93"/>
-  <circle cx="536" cy="16" r="2.2" fill="#F472B6" opacity="0.8"/>
-  <circle cx="548" cy="16" r="1.8" fill="#A1A1AA" opacity="0.6"/>
+  <path d="M 514,8 Q 517,17 526,20 Q 517,23 514,32 Q 511,23 502,20 Q 511,17 514,8 Z" fill="#FF2E93" stroke="#FFFFFF" stroke-width="0.9" stroke-linejoin="round"/>
+  <g transform="translate(544, 20) rotate(14) scale(0.72)">
+    <path d="M 0,-3.5 C -2,-8.5 -10,-8 -10,-1.5 C -10,4.5 -3.5,8 0,11 C 3.5,8 10,4.5 10,-1.5 C 10,-8 2,-8.5 0,-3.5 Z" fill="#0B0B10" stroke="#FFFFFF" stroke-width="2.0" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>
+  <circle cx="570" cy="20" r="2.8" fill="#F9A8D4" opacity="0.9"/>
+  <circle cx="584" cy="20" r="2.2" fill="#A1A1AA" opacity="0.7"/>
 </svg>

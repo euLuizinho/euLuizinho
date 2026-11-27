@@ -1,109 +1,162 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#060609"/>
-      <stop offset="52%" stop-color="#171720"/>
-      <stop offset="100%" stop-color="#440D2D"/>
+    <linearGradient id="vbBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050507"/>
+      <stop offset="52%" stop-color="#191922"/>
+      <stop offset="100%" stop-color="#4A0E31"/>
     </linearGradient>
-    <radialGradient id="pinkGlow" cx="82%" cy="48%" r="45%">
+    <radialGradient id="vbGlow" cx="80%" cy="46%" r="48%">
       <stop offset="0%" stop-color="#FF2E93" stop-opacity="0.34"/>
       <stop offset="55%" stop-color="#EC4899" stop-opacity="0.10"/>
       <stop offset="100%" stop-color="#FF2E93" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="softGlow" cx="62%" cy="85%" r="35%">
+    <radialGradient id="vbSoft" cx="58%" cy="92%" r="36%">
       <stop offset="0%" stop-color="#F9A8D4" stop-opacity="0.14"/>
       <stop offset="100%" stop-color="#F9A8D4" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="ribbonMain" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FF2E93" stop-opacity="0.12"/>
+    <linearGradient id="vbWaveRibbon" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF1E8A" stop-opacity="0.15"/>
       <stop offset="48%" stop-color="#FF2E93"/>
       <stop offset="100%" stop-color="#FFFFFF"/>
     </linearGradient>
-    <linearGradient id="ribbonSoft" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#F472B6" stop-opacity="0.1"/>
-      <stop offset="60%" stop-color="#F472B6" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#FBCFE8" stop-opacity="0.9"/>
+    <linearGradient id="vbSoftRibbon" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F472B6" stop-opacity="0.12"/>
+      <stop offset="58%" stop-color="#F472B6" stop-opacity="0.88"/>
+      <stop offset="100%" stop-color="#FBCFE8" stop-opacity="0.95"/>
     </linearGradient>
-    <clipPath id="frameClip">
+    <linearGradient id="vbAccentPill" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF2E93"/>
+      <stop offset="55%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0.1"/>
+    </linearGradient>
+    <clipPath id="vbFrame">
       <rect x="1" y="1" width="898" height="218" rx="14"/>
     </clipPath>
     <style>
       @keyframes twinkle {
-        0%, 100% { opacity: 0.95; }
-        50% { opacity: 0.38; }
+        0%, 100% { opacity: 0.96; }
+        50% { opacity: 0.44; }
       }
-      @keyframes floatSoft {
-        0%, 100% { opacity: 0.88; }
-        50% { opacity: 0.52; }
+      @keyframes pulseSoft {
+        0%, 100% { opacity: 0.92; }
+        50% { opacity: 0.56; }
       }
-      .twinkle { animation: twinkle 3.4s ease-in-out infinite; }
-      .twinkleSlow { animation: twinkle 4.6s ease-in-out infinite; }
-      .heartPulse { animation: floatSoft 4s ease-in-out infinite; }
+      .twinkle { animation: twinkle 3.2s ease-in-out infinite; }
+      .twinkleSlow { animation: twinkle 4.4s ease-in-out infinite; }
+      .heartGlow { animation: pulseSoft 3.8s ease-in-out infinite; }
     </style>
   </defs>
 
-  <g clip-path="url(#frameClip)">
-    <!-- Deep Background & Glows -->
-    <rect width="900" height="220" fill="url(#bg)"/>
-    <rect width="900" height="220" fill="url(#pinkGlow)"/>
-    <rect width="900" height="220" fill="url(#softGlow)"/>
+  <g clip-path="url(#vbFrame)">
+    <!-- Deep Noir to Magenta Backdrop -->
+    <rect width="900" height="220" fill="url(#vbBg)"/>
+    <rect width="900" height="220" fill="url(#vbGlow)"/>
+    <rect width="900" height="220" fill="url(#vbSoft)"/>
 
-    <!-- Flowing Frutiger Metro Layered Waves -->
-    <path d="M0,196 C190,136 390,224 615,126 C735,72 825,94 900,38 L900,220 L0,220 Z" fill="#121218" opacity="0.86"/>
-    <path d="M180,220 C395,186 555,222 720,145 C805,105 860,118 900,82 L900,220 Z" fill="#1E1420" opacity="0.55"/>
+    <!-- Classic Style 2 Layered Flowing Metro Waves -->
+    <path d="M0,192 C210,124 405,222 628,124 C746,72 826,92 900,34 L900,220 L0,220 Z" fill="#1D1D28" opacity="0.88"/>
+    <path d="M230,220 C430,174 580,214 752,134 C828,98 870,110 900,76 L900,220 Z" fill="#321025" opacity="0.62"/>
 
-    <!-- Vector Bloom Ribbons -->
-    <path d="M295,220 C480,152 625,46 900,72" fill="none" stroke="url(#ribbonMain)" stroke-width="6.5" stroke-linecap="round"/>
-    <path d="M360,220 C535,168 675,78 900,102" fill="none" stroke="url(#ribbonSoft)" stroke-width="2.6" stroke-linecap="round"/>
-    <path d="M445,220 C600,185 730,118 900,134" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity="0.38" stroke-linecap="round"/>
+    <!-- Bold Vector Bloom Ribbons -->
+    <path d="M368,220 C518,162 632,42 900,66" fill="none" stroke="url(#vbWaveRibbon)" stroke-width="7" stroke-linecap="round"/>
+    <path d="M428,220 C568,172 680,72 900,98" fill="none" stroke="url(#vbSoftRibbon)" stroke-width="2.8" stroke-linecap="round"/>
+    <path d="M492,220 C620,186 738,108 900,126" fill="none" stroke="#FFFFFF" stroke-width="1.3" opacity="0.46" stroke-linecap="round"/>
+    <path d="M510,0 C618,44 736,20 900,46" fill="none" stroke="#F472B6" stroke-width="1.2" opacity="0.32" stroke-linecap="round"/>
 
-    <!-- Glossy-Flat Translucent Vector Circles -->
-    <circle cx="778" cy="82" r="46" fill="#FF2E93" opacity="0.16"/>
-    <circle cx="820" cy="116" r="28" fill="#FFFFFF" opacity="0.12"/>
-    <circle cx="732" cy="134" r="18" fill="none" stroke="#F9A8D4" stroke-width="1.4" opacity="0.75"/>
-    <circle cx="662" cy="158" r="9" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity="0.45"/>
+    <!-- Overlapping Glossy-Flat Metro Orbs & Rings -->
+    <circle cx="772" cy="84" r="46" fill="#FF2E93" opacity="0.22"/>
+    <circle cx="818" cy="118" r="30" fill="#FFFFFF" opacity="0.14"/>
+    <circle cx="656" cy="160" r="24" fill="#F472B6" opacity="0.13"/>
+    <circle cx="722" cy="134" r="18" fill="none" stroke="#FBCFE8" stroke-width="1.5" opacity="0.82"/>
+    <circle cx="608" cy="178" r="10" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity="0.52"/>
 
-    <!-- Halftone Dots -->
-    <g fill="#F472B6" opacity="0.34">
-      <circle cx="570" cy="34" r="2.3"/><circle cx="586" cy="34" r="2.3"/><circle cx="602" cy="34" r="2.3"/><circle cx="618" cy="34" r="2.3"/>
-      <circle cx="578" cy="48" r="1.8"/><circle cx="594" cy="48" r="1.8"/><circle cx="610" cy="48" r="1.8"/><circle cx="626" cy="48" r="1.8"/>
-      <circle cx="586" cy="62" r="1.4"/><circle cx="602" cy="62" r="1.4"/><circle cx="618" cy="62" r="1.4"/>
+    <!-- Halftone Dot Matrices -->
+    <g fill="#F472B6" opacity="0.44">
+      <circle cx="526" cy="30" r="2.4"/><circle cx="542" cy="30" r="2.4"/><circle cx="558" cy="30" r="2.4"/><circle cx="574" cy="30" r="2.4"/><circle cx="590" cy="30" r="2.4"/>
+      <circle cx="534" cy="43" r="1.9"/><circle cx="550" cy="43" r="1.9"/><circle cx="566" cy="43" r="1.9"/><circle cx="582" cy="43" r="1.9"/><circle cx="598" cy="43" r="1.9"/>
+      <circle cx="542" cy="56" r="1.5"/><circle cx="558" cy="56" r="1.5"/><circle cx="574" cy="56" r="1.5"/><circle cx="590" cy="56" r="1.5"/>
     </g>
+    <g fill="#FFFFFF" opacity="0.28">
+      <circle cx="774" cy="192" r="1.8"/><circle cx="788" cy="192" r="1.8"/><circle cx="802" cy="192" r="1.8"/>
+      <circle cx="781" cy="204" r="1.4"/><circle cx="795" cy="204" r="1.4"/>
+    </g>
+
+    <!-- Crisp 4-Point Vector Bloom Stars (Solid & Hollow Outlines) -->
+    <!-- Hero white star burst -->
+    <path d="M 676,30 Q 680.5,43.5 694,48 Q 680.5,52.5 676,66 Q 671.5,52.5 658,48 Q 671.5,43.5 676,30 Z" fill="#FFFFFF" class="twinkle"/>
+    <!-- Hollow pastel-pink star top right -->
+    <path d="M 842,27 Q 845.6,37.4 856,41 Q 845.6,44.6 842,55 Q 838.4,44.6 828,41 Q 838.4,37.4 842,27 Z" fill="none" stroke="#F9A8D4" stroke-width="1.5" stroke-linejoin="round" class="twinkleSlow"/>
+    <!-- Hollow white star mid-right -->
+    <path d="M 602,106 Q 605,115 614,118 Q 605,121 602,130 Q 599,121 590,118 Q 599,115 602,106 Z" fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-linejoin="round" opacity="0.9"/>
+    <!-- Solid hot-pink star burst lower right -->
+    <path d="M 740,160 Q 743.2,168.8 752,172 Q 743.2,175.2 740,184 Q 736.8,175.2 728,172 Q 736.8,168.8 740,160 Z" fill="#FF2E93"/>
+    <!-- Hollow hot-pink star bottom right -->
+    <path d="M 812,172 Q 814.8,179.2 822,182 Q 814.8,184.8 812,192 Q 809.2,184.8 802,182 Q 809.2,179.2 812,172 Z" fill="none" stroke="#FF2E93" stroke-width="1.45" stroke-linejoin="round"/>
+    <!-- Hollow white star upper near orb -->
+    <path d="M 730,24 Q 732.4,31.6 740,34 Q 732.4,36.4 730,44 Q 727.6,36.4 720,34 Q 727.6,31.6 730,24 Z" fill="none" stroke="#FFFFFF" stroke-width="1.25" stroke-linejoin="round" opacity="0.82"/>
+    <!-- Solid white sparkle center-right ribbon -->
+    <path d="M 558,132 Q 560,138 566,140 Q 560,142 558,148 Q 556,142 550,140 Q 556,138 558,132 Z" fill="#FFFFFF" opacity="0.88"/>
+    <!-- Subtle hollow star lower-left accent -->
+    <path d="M 318,176 Q 320,181.5 326,183.5 Q 320,185.5 318,191 Q 316,185.5 310,183.5 Q 316,181.5 318,176 Z" fill="none" stroke="#F472B6" stroke-width="1.2" stroke-linejoin="round" opacity="0.72"/>
+    <!-- Delicate hollow heart bottom-left -->
+    <g transform="translate(348, 185) rotate(-10) scale(0.62)">
+      <path d="M 0,-3.5 C -2,-8.5 -10,-8 -10,-1.5 C -10,4.5 -3.5,8 0,11 C 3.5,8 10,4.5 10,-1.5 C 10,-8 2,-8.5 0,-3.5 Z" fill="none" stroke="#FFFFFF" stroke-width="2.0" stroke-linejoin="round" stroke-linecap="round" opacity="0.65"/>
+    </g>
+    <!-- Hollow pink star framing top-left -->
+    <path d="M 48,30 Q 50.4,37.6 58,40 Q 50.4,42.4 48,50 Q 45.6,42.4 38,40 Q 45.6,37.6 48,30 Z" fill="none" stroke="#FF2E93" stroke-width="1.35" stroke-linejoin="round" opacity="0.88"/>
+    <!-- Micro solid star top-left -->
+    <path d="M 104,34 Q 105.5,38.5 110,40 Q 105.5,41.5 104,46 Q 102.5,41.5 98,40 Q 102.5,38.5 104,34 Z" fill="#FFFFFF" opacity="0.72"/>
+    <!-- Hollow pastel star bottom-center -->
+    <path d="M 432,192 Q 434.2,197.8 440,200 Q 434.2,202.2 432,208 Q 429.8,202.2 424,200 Q 429.8,197.8 432,192 Z" fill="none" stroke="#F9A8D4" stroke-width="1.2" stroke-linejoin="round" opacity="0.75"/>
 
     <!-- Hollow Vector Hearts (Corações Vazados) -->
-    <!-- Hero hollow heart (white/pink double outline) -->
-    <g transform="translate(778, 80) rotate(-10) scale(1.65)" class="heartPulse">
-      <path d="M 0,6.5 C -1.5,4.8 -9,0 -9,-4.5 C -9,-7.8 -6.3,-10 -3.4,-10 C -1.6,-10 -0.4,-9.1 0,-7.8 C 0.4,-9.1 1.6,-10 3.4,-10 C 6.3,-10 9,-7.8 9,-4.5 C 9,0 1.5,4.8 0,6.5 Z" fill="none" stroke="#FFFFFF" stroke-width="1.35" stroke-linejoin="round"/>
+    <!-- Soft pink halo behind hero heart -->
+    <g transform="translate(772, 82) rotate(-12) scale(2.05)" opacity="0.32">
+      <path d="M 0,-3.5 C -2,-8.5 -10,-8 -10,-1.5 C -10,4.5 -3.5,8 0,11 C 3.5,8 10,4.5 10,-1.5 C 10,-8 2,-8.5 0,-3.5 Z" fill="none" stroke="#FF2E93" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
     </g>
-    <!-- Medium hollow heart (hot pink) -->
-    <g transform="translate(698, 126) rotate(12) scale(1.15)">
-      <path d="M 0,6.5 C -1.5,4.8 -9,0 -9,-4.5 C -9,-7.8 -6.3,-10 -3.4,-10 C -1.6,-10 -0.4,-9.1 0,-7.8 C 0.4,-9.1 1.6,-10 3.4,-10 C 6.3,-10 9,-7.8 9,-4.5 C 9,0 1.5,4.8 0,6.5 Z" fill="none" stroke="#FF2E93" stroke-width="1.6" stroke-linejoin="round"/>
+    <!-- Hero crisp white hollow heart -->
+    <g transform="translate(772, 82) rotate(-12) scale(1.9)" class="heartGlow">
+      <path d="M 0,-3.5 C -2,-8.5 -10,-8 -10,-1.5 C -10,4.5 -3.5,8 0,11 C 3.5,8 10,4.5 10,-1.5 C 10,-8 2,-8.5 0,-3.5 Z" fill="none" stroke="#FFFFFF" stroke-width="1.35" stroke-linejoin="round" stroke-linecap="round"/>
     </g>
-    <!-- Small hollow heart (pastel pink) -->
-    <g transform="translate(848, 148) rotate(-14) scale(0.9)">
-      <path d="M 0,6.5 C -1.5,4.8 -9,0 -9,-4.5 C -9,-7.8 -6.3,-10 -3.4,-10 C -1.6,-10 -0.4,-9.1 0,-7.8 C 0.4,-9.1 1.6,-10 3.4,-10 C 6.3,-10 9,-7.8 9,-4.5 C 9,0 1.5,4.8 0,6.5 Z" fill="none" stroke="#F9A8D4" stroke-width="1.7" stroke-linejoin="round"/>
+    <!-- Medium hot-pink hollow heart -->
+    <g transform="translate(686, 128) rotate(14) scale(1.3)">
+      <path d="M 0,-3.5 C -2,-8.5 -10,-8 -10,-1.5 C -10,4.5 -3.5,8 0,11 C 3.5,8 10,4.5 10,-1.5 C 10,-8 2,-8.5 0,-3.5 Z" fill="none" stroke="#FF2E93" stroke-width="1.65" stroke-linejoin="round" stroke-linecap="round"/>
     </g>
-    <!-- Delicate micro hollow heart near subtitle -->
-    <g transform="translate(642, 74) rotate(-8) scale(0.75)">
-      <path d="M 0,6.5 C -1.5,4.8 -9,0 -9,-4.5 C -9,-7.8 -6.3,-10 -3.4,-10 C -1.6,-10 -0.4,-9.1 0,-7.8 C 0.4,-9.1 1.6,-10 3.4,-10 C 6.3,-10 9,-7.8 9,-4.5 C 9,0 1.5,4.8 0,6.5 Z" fill="none" stroke="#F472B6" stroke-width="1.8" stroke-linejoin="round"/>
+    <!-- Medium white hollow heart bottom-mid -->
+    <g transform="translate(566, 168) rotate(-10) scale(1.12)">
+      <path d="M 0,-3.5 C -2,-8.5 -10,-8 -10,-1.5 C -10,4.5 -3.5,8 0,11 C 3.5,8 10,4.5 10,-1.5 C 10,-8 2,-8.5 0,-3.5 Z" fill="none" stroke="#FFFFFF" stroke-width="1.55" stroke-linejoin="round" stroke-linecap="round" opacity="0.92"/>
+    </g>
+    <!-- Medium pastel-pink hollow heart right-lower -->
+    <g transform="translate(848, 152) rotate(-16) scale(1.05)">
+      <path d="M 0,-3.5 C -2,-8.5 -10,-8 -10,-1.5 C -10,4.5 -3.5,8 0,11 C 3.5,8 10,4.5 10,-1.5 C 10,-8 2,-8.5 0,-3.5 Z" fill="none" stroke="#F9A8D4" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/>
+    </g>
+    <!-- Small hot-pink hollow heart upper-mid -->
+    <g transform="translate(628, 76) rotate(8) scale(0.84)">
+      <path d="M 0,-3.5 C -2,-8.5 -10,-8 -10,-1.5 C -10,4.5 -3.5,8 0,11 C 3.5,8 10,4.5 10,-1.5 C 10,-8 2,-8.5 0,-3.5 Z" fill="none" stroke="#FF2E93" stroke-width="1.85" stroke-linejoin="round" stroke-linecap="round"/>
+    </g>
+    <!-- Small white hollow heart far-right -->
+    <g transform="translate(866, 86) rotate(16) scale(0.75)">
+      <path d="M 0,-3.5 C -2,-8.5 -10,-8 -10,-1.5 C -10,4.5 -3.5,8 0,11 C 3.5,8 10,4.5 10,-1.5 C 10,-8 2,-8.5 0,-3.5 Z" fill="none" stroke="#FFFFFF" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round" opacity="0.88"/>
+    </g>
+    <!-- Framing top-left pastel hollow heart -->
+    <g transform="translate(76, 40) rotate(-12) scale(0.76)">
+      <path d="M 0,-3.5 C -2,-8.5 -10,-8 -10,-1.5 C -10,4.5 -3.5,8 0,11 C 3.5,8 10,4.5 10,-1.5 C 10,-8 2,-8.5 0,-3.5 Z" fill="none" stroke="#F9A8D4" stroke-width="1.9" stroke-linejoin="round" stroke-linecap="round" opacity="0.85"/>
+    </g>
+    <!-- Micro pink hollow heart lower-center -->
+    <g transform="translate(490, 190) rotate(14) scale(0.68)">
+      <path d="M 0,-3.5 C -2,-8.5 -10,-8 -10,-1.5 C -10,4.5 -3.5,8 0,11 C 3.5,8 10,4.5 10,-1.5 C 10,-8 2,-8.5 0,-3.5 Z" fill="none" stroke="#F472B6" stroke-width="2.0" stroke-linejoin="round" stroke-linecap="round" opacity="0.8"/>
     </g>
 
-    <!-- 4-Point Vector Bloom Stars (Solid & Hollow) -->
-    <path d="M 692,36 Q 694.5,48.5 707,51 Q 694.5,53.5 692,66 Q 689.5,53.5 677,51 Q 689.5,48.5 692,36 Z" fill="#FFFFFF" class="twinkle"/>
-    <path d="M 852,32 Q 853.8,41.2 863,43 Q 853.8,44.8 852,54 Q 850.2,44.8 841,43 Q 850.2,41.2 852,32 Z" fill="none" stroke="#F9A8D4" stroke-width="1.35" class="twinkleSlow"/>
-    <path d="M 738,162 Q 739.5,170.5 748,172 Q 739.5,173.5 738,182 Q 736.5,173.5 728,172 Q 736.5,170.5 738,162 Z" fill="#FF2E93"/>
-    <path d="M 616,104 Q 617.2,110.8 624,112 Q 617.2,113.2 616,120 Q 614.8,113.2 608,112 Q 614.8,110.8 616,104 Z" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity="0.8"/>
-    <path d="M 822,182 Q 823.2,187.8 829,189 Q 823.2,190.2 822,196 Q 820.8,190.2 815,189 Q 820.8,187.8 822,182 Z" fill="#FFFFFF" opacity="0.75"/>
-
-    <!-- Typography (Left) -->
-    <text x="44" y="92" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="44" font-weight="900" fill="#FFFFFF" letter-spacing="-0.8">LUIZ FABIANO</text>
-    <text x="44" y="124" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="600" fill="#F9A8D4">
+    <!-- Main Identity Typography -->
+    <text x="44" y="98" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="44" font-weight="900" fill="#FFFFFF" letter-spacing="-0.8">LUIZ FABIANO</text>
+    <text x="44" y="130" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="600" fill="#F9A8D4">
       Visão Sistêmica  ·  IA Aplicada, Produto Tech, Dados &amp; Cloud
     </text>
-    <text x="44" y="154" font-family="'Fira Code', 'Cascadia Code', Consolas, monospace" font-size="12" fill="#A1A1AA">
+    <text x="44" y="159" font-family="'Fira Code', 'Cascadia Code', Consolas, monospace" font-size="12" fill="#C4C4CC">
       @euLuizinho  ·  FIAP SI (Jul/2027)  ·  Técnico ETEC  ·  São Paulo, BR
     </text>
+    <rect x="44" y="176" width="210" height="4" rx="2" fill="url(#vbAccentPill)" opacity="0.9"/>
   </g>
 
-  <rect x="1" y="1" width="898" height="218" rx="14" fill="none" stroke="#422036" stroke-width="1.2"/>
+  <rect x="1" y="1" width="898" height="218" rx="14" fill="none" stroke="#4A223A" stroke-width="1.3"/>
 </svg>

@@ -1,10 +1,10 @@
 ﻿<div align="center">
-  <img src="./assets/header.svg" width="100%" alt="Luiz Fabiano • @euLuizinho — Frutiger Metro" />
+  <img src="./assets/header.svg" width="100%" alt="Luiz Fabiano • @euLuizinho — Frutiger Metro Vector Bloom" />
 </div>
 
 <div align="center">
-  <a href="./README.md"><img src="https://img.shields.io/badge/PT--BR-ATIVO-FF2E93?style=flat-square&labelColor=09090D" alt="Português (Ativo)" /></a>
-  <a href="./README.en.md"><img src="https://img.shields.io/badge/ENGLISH-SWITCH-2A2A35?style=flat-square&labelColor=09090D" alt="Switch to English" /></a>
+  <a href="./README.md"><img src="https://img.shields.io/badge/%E2%99%A1_PT--BR-ATIVO-FF2E93?style=flat&labelColor=09090D" alt="Português (Ativo)" /></a>
+  <a href="./README.en.md"><img src="https://img.shields.io/badge/%E2%9C%A6_ENGLISH-SWITCH-2A2A35?style=flat&labelColor=09090D" alt="Switch to English" /></a>
 </div>
 
 <div align="center">
@@ -47,37 +47,37 @@
 </div>
 
 <br>
-<div align="center"><img src="./assets/divider.svg" width="100%" alt="✦" /></div>
+<div align="center"><img src="./assets/divider.svg" width="100%" alt="♡ ✦ ♡" /></div>
 <br>
 
-### ✦ `> cat skills.txt`
+### ♡ `> cat skills.txt`
 
 <div align="center">
   <p>
     <b>◆ Autonomia Prática</b> <sub><i>(operação direta, arquitetura &amp; defesa técnica)</i></sub>
   </p>
-  <img src="https://img.shields.io/badge/Lógica_%26_Fluxos-FF2E93?style=flat-square&labelColor=09090D" alt="Lógica e Fluxos" />
-  <img src="https://img.shields.io/badge/IA_Aplicada_%26_Agentes-FF2E93?style=flat-square&logo=googlegemini&logoColor=FFFFFF&labelColor=09090D" alt="IA Aplicada e Agentes" />
-  <img src="https://img.shields.io/badge/Prompt_Engineering-FF2E93?style=flat-square&logo=anthropic&logoColor=FFFFFF&labelColor=09090D" alt="Prompt Engineering" />
-  <img src="https://img.shields.io/badge/Produto_%26_Negócios_Tech-FFFFFF?style=flat-square&logo=jira&logoColor=FF2E93&labelColor=09090D" alt="Produto e Negócios Tech" />
-  <img src="https://img.shields.io/badge/Arquitetura_%26_Mermaid-FFFFFF?style=flat-square&logo=mermaid&logoColor=FF2E93&labelColor=09090D" alt="Arquitetura e Mermaid" />
-  <img src="https://img.shields.io/badge/SQL_%26_Star_Schema-FF2E93?style=flat-square&logo=postgresql&logoColor=FFFFFF&labelColor=09090D" alt="SQL e Star Schema" />
-  <img src="https://img.shields.io/badge/Linux,_SSH_%26_Redes-FFFFFF?style=flat-square&logo=gnubash&logoColor=FF2E93&labelColor=09090D" alt="Linux, SSH e Redes" />
-  <img src="https://img.shields.io/badge/Git_%26_APIs_REST_(cURL)-FF2E93?style=flat-square&logo=git&logoColor=FFFFFF&labelColor=09090D" alt="Git e APIs REST" />
+  <img src="https://img.shields.io/badge/Lógica_%26_Fluxos-FF2E93?style=flat&labelColor=09090D" alt="Lógica e Fluxos" />
+  <img src="https://img.shields.io/badge/IA_Aplicada_%26_Agentes-FF2E93?style=flat&logo=googlegemini&logoColor=FFFFFF&labelColor=09090D" alt="IA Aplicada e Agentes" />
+  <img src="https://img.shields.io/badge/Prompt_Engineering-FF2E93?style=flat&logo=anthropic&logoColor=FFFFFF&labelColor=09090D" alt="Prompt Engineering" />
+  <img src="https://img.shields.io/badge/Produto_%26_Negócios_Tech-FFFFFF?style=flat&logo=jira&logoColor=FF2E93&labelColor=09090D" alt="Produto e Negócios Tech" />
+  <img src="https://img.shields.io/badge/Arquitetura_%26_Mermaid-FFFFFF?style=flat&logo=mermaid&logoColor=FF2E93&labelColor=09090D" alt="Arquitetura e Mermaid" />
+  <img src="https://img.shields.io/badge/SQL_%26_Star_Schema-FF2E93?style=flat&logo=postgresql&logoColor=FFFFFF&labelColor=09090D" alt="SQL e Star Schema" />
+  <img src="https://img.shields.io/badge/Linux,_SSH_%26_Redes-FFFFFF?style=flat&logo=gnubash&logoColor=FF2E93&labelColor=09090D" alt="Linux, SSH e Redes" />
+  <img src="https://img.shields.io/badge/Git_%26_APIs_REST_(cURL)-FF2E93?style=flat&logo=git&logoColor=FFFFFF&labelColor=09090D" alt="Git e APIs REST" />
 
   <br><br>
 
   <p>
     <b>◇ Construído em Projetos</b> <sub><i>(aplicado em entregas reais &amp; consolidação contínua)</i></sub>
   </p>
-  <img src="https://img.shields.io/badge/Python_%26_FastAPI-2A2A35?style=flat-square&logo=python&logoColor=F472B6&labelColor=09090D" alt="Python e FastAPI" />
-  <img src="https://img.shields.io/badge/AWS_Serverless_(Lambda/DDB/EC2)-2A2A35?style=flat-square&logoColor=F472B6&labelColor=09090D" alt="AWS Serverless" />
-  <img src="https://img.shields.io/badge/Azure_OpenAI_(JSON_Mode)-2A2A35?style=flat-square&logoColor=F472B6&labelColor=09090D" alt="Azure OpenAI" />
-  <img src="https://img.shields.io/badge/Docker,_Nginx,_Redis_%26_RabbitMQ-2A2A35?style=flat-square&logo=docker&logoColor=F472B6&labelColor=09090D" alt="Docker, Nginx, Redis e RabbitMQ" />
-  <img src="https://img.shields.io/badge/Power_BI_%26_DAX-2A2A35?style=flat-square&logoColor=F472B6&labelColor=09090D" alt="Power BI e DAX" />
-  <img src="https://img.shields.io/badge/OpenCV_%26_YOLOv8-2A2A35?style=flat-square&logo=opencv&logoColor=F472B6&labelColor=09090D" alt="OpenCV e YOLOv8" />
-  <img src="https://img.shields.io/badge/Kotlin,_Java,_Flutter_%26_Swift-2A2A35?style=flat-square&logo=kotlin&logoColor=F472B6&labelColor=09090D" alt="Kotlin, Java, Flutter e Swift" />
-  <img src="https://img.shields.io/badge/React_%26_Tailwind_CSS-2A2A35?style=flat-square&logo=react&logoColor=F472B6&labelColor=09090D" alt="React e Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Python_%26_FastAPI-2A2A35?style=flat&logo=python&logoColor=F472B6&labelColor=09090D" alt="Python e FastAPI" />
+  <img src="https://img.shields.io/badge/AWS_Serverless_(Lambda/DDB/EC2)-2A2A35?style=flat&logoColor=F472B6&labelColor=09090D" alt="AWS Serverless" />
+  <img src="https://img.shields.io/badge/Azure_OpenAI_(JSON_Mode)-2A2A35?style=flat&logoColor=F472B6&labelColor=09090D" alt="Azure OpenAI" />
+  <img src="https://img.shields.io/badge/Docker,_Nginx,_Redis_%26_RabbitMQ-2A2A35?style=flat&logo=docker&logoColor=F472B6&labelColor=09090D" alt="Docker, Nginx, Redis e RabbitMQ" />
+  <img src="https://img.shields.io/badge/Power_BI_%26_DAX-2A2A35?style=flat&logoColor=F472B6&labelColor=09090D" alt="Power BI e DAX" />
+  <img src="https://img.shields.io/badge/OpenCV_%26_YOLOv8-2A2A35?style=flat&logo=opencv&logoColor=F472B6&labelColor=09090D" alt="OpenCV e YOLOv8" />
+  <img src="https://img.shields.io/badge/Kotlin,_Java,_Flutter_%26_Swift-2A2A35?style=flat&logo=kotlin&logoColor=F472B6&labelColor=09090D" alt="Kotlin, Java, Flutter e Swift" />
+  <img src="https://img.shields.io/badge/React_%26_Tailwind_CSS-2A2A35?style=flat&logo=react&logoColor=F472B6&labelColor=09090D" alt="React e Tailwind CSS" />
 
   <br><br>
   <a href="https://skillicons.dev">
@@ -86,7 +86,7 @@
 </div>
 
 <br>
-<div align="center"><img src="./assets/divider.svg" width="100%" alt="✦" /></div>
+<div align="center"><img src="./assets/divider.svg" width="100%" alt="♡ ✦ ♡" /></div>
 <br>
 
 ### ✦ `> ls ./portfolio`
@@ -111,10 +111,10 @@
 </details>
 
 <br>
-<div align="center"><img src="./assets/divider.svg" width="100%" alt="✦" /></div>
+<div align="center"><img src="./assets/divider.svg" width="100%" alt="♡ ✦ ♡" /></div>
 <br>
 
-### ✦ `> cat education.log`
+### ♡ `> cat education.log`
 
 | Formação | Instituição | Período | Destaques &amp; Base |
 | :--- | :--- | :--- | :--- |
@@ -138,7 +138,7 @@
 </details>
 
 <br>
-<div align="center"><img src="./assets/divider.svg" width="100%" alt="✦" /></div>
+<div align="center"><img src="./assets/divider.svg" width="100%" alt="♡ ✦ ♡" /></div>
 <br>
 
 ### ✦ `> now_playing --spotify`
@@ -150,10 +150,10 @@
 </div>
 
 <br>
-<div align="center"><img src="./assets/divider.svg" width="100%" alt="✦" /></div>
+<div align="center"><img src="./assets/divider.svg" width="100%" alt="♡ ✦ ♡" /></div>
 <br>
 
-### ✦ `> ./generate_snake.sh`
+### ♡ `> ./generate_snake.sh`
 
 <div align="center">
   <picture>
