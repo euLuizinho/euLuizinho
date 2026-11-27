@@ -1,103 +1,97 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#07070A"/>
-      <stop offset="55%" stop-color="#13131A"/>
-      <stop offset="100%" stop-color="#2B0C1F"/>
+      <stop offset="0%" stop-color="#060609"/>
+      <stop offset="52%" stop-color="#171720"/>
+      <stop offset="100%" stop-color="#440D2D"/>
     </linearGradient>
-    <radialGradient id="pinkAura" cx="84%" cy="55%" r="42%">
-      <stop offset="0%" stop-color="#FF2E93" stop-opacity="0.30"/>
-      <stop offset="55%" stop-color="#EC4899" stop-opacity="0.08"/>
+    <radialGradient id="pinkGlow" cx="82%" cy="48%" r="45%">
+      <stop offset="0%" stop-color="#FF2E93" stop-opacity="0.34"/>
+      <stop offset="55%" stop-color="#EC4899" stop-opacity="0.10"/>
       <stop offset="100%" stop-color="#FF2E93" stop-opacity="0"/>
     </radialGradient>
+    <radialGradient id="softGlow" cx="62%" cy="85%" r="35%">
+      <stop offset="0%" stop-color="#F9A8D4" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#F9A8D4" stop-opacity="0"/>
+    </radialGradient>
     <linearGradient id="ribbonMain" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FF2E93" stop-opacity="0.15"/>
-      <stop offset="50%" stop-color="#FF2E93"/>
+      <stop offset="0%" stop-color="#FF2E93" stop-opacity="0.12"/>
+      <stop offset="48%" stop-color="#FF2E93"/>
       <stop offset="100%" stop-color="#FFFFFF"/>
     </linearGradient>
-    <linearGradient id="accentBar" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#FF2E93"/>
-      <stop offset="55%" stop-color="#F472B6"/>
-      <stop offset="100%" stop-color="#FFFFFF"/>
+    <linearGradient id="ribbonSoft" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F472B6" stop-opacity="0.1"/>
+      <stop offset="60%" stop-color="#F472B6" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#FBCFE8" stop-opacity="0.9"/>
     </linearGradient>
     <clipPath id="frameClip">
       <rect x="1" y="1" width="898" height="218" rx="14"/>
     </clipPath>
     <style>
-      @keyframes pulseNode {
-        0%, 100% { opacity: 0.95; transform: scale(1); }
-        50% { opacity: 0.45; transform: scale(0.88); }
-      }
       @keyframes twinkle {
-        0%, 100% { opacity: 0.9; }
-        50% { opacity: 0.35; }
+        0%, 100% { opacity: 0.95; }
+        50% { opacity: 0.38; }
       }
-      .pulse { transform-box: fill-box; transform-origin: center; animation: pulseNode 2.8s ease-in-out infinite; }
-      .star { animation: twinkle 3.6s ease-in-out infinite; }
+      @keyframes floatSoft {
+        0%, 100% { opacity: 0.88; }
+        50% { opacity: 0.52; }
+      }
+      .twinkle { animation: twinkle 3.4s ease-in-out infinite; }
+      .twinkleSlow { animation: twinkle 4.6s ease-in-out infinite; }
+      .heartPulse { animation: floatSoft 4s ease-in-out infinite; }
     </style>
   </defs>
 
   <g clip-path="url(#frameClip)">
     <rect width="900" height="220" fill="url(#bg)"/>
-    <rect width="900" height="220" fill="url(#pinkAura)"/>
+    <rect width="900" height="220" fill="url(#pinkGlow)"/>
+    <rect width="900" height="220" fill="url(#softGlow)"/>
 
-    <line x1="0" y1="36" x2="900" y2="36" stroke="#23232E" stroke-width="1"/>
-    <line x1="600" y1="0" x2="600" y2="220" stroke="#1E1E28" stroke-width="1"/>
-    <line x1="36" y1="186" x2="585" y2="186" stroke="#1C1C24" stroke-width="1"/>
+    <path d="M0,196 C190,136 390,224 615,126 C735,72 825,94 900,38 L900,220 L0,220 Z" fill="#121218" opacity="0.86"/>
+    <path d="M180,220 C395,186 555,222 720,145 C805,105 860,118 900,82 L900,220 Z" fill="#1E1420" opacity="0.55"/>
 
-    <polygon points="625,36 695,36 605,220 535,220" fill="#1C1C26" opacity="0.72"/>
-    <polygon points="698,36 730,36 640,220 608,220" fill="#FF2E93" opacity="0.22"/>
-    <polygon points="736,36 746,36 656,220 646,220" fill="#FFFFFF" opacity="0.18"/>
+    <path d="M295,220 C480,152 625,46 900,72" fill="none" stroke="url(#ribbonMain)" stroke-width="6.5" stroke-linecap="round"/>
+    <path d="M360,220 C535,168 675,78 900,102" fill="none" stroke="url(#ribbonSoft)" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M445,220 C600,185 730,118 900,134" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity="0.38" stroke-linecap="round"/>
 
-    <path d="M410,220 C540,170 640,225 760,132 C825,82 865,92 900,56 L900,220 Z" fill="#121218" opacity="0.88"/>
-    <path d="M490,220 C615,176 705,82 900,98" fill="none" stroke="url(#ribbonMain)" stroke-width="5.5" stroke-linecap="round"/>
-    <path d="M540,220 C650,188 745,108 900,124" fill="none" stroke="#F472B6" stroke-width="2" opacity="0.75"/>
-    <path d="M585,220 C690,196 785,138 900,148" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.35"/>
-
-    <circle cx="792" cy="116" r="54" fill="none" stroke="#F472B6" stroke-width="1.2" opacity="0.35"/>
-    <circle cx="792" cy="116" r="36" fill="none" stroke="#FFFFFF" stroke-width="1" stroke-dasharray="5 5" opacity="0.38"/>
-    <circle cx="792" cy="116" r="21" fill="#FF2E93" opacity="0.22"/>
-    <circle cx="792" cy="116" r="9.5" fill="#FF2E93" class="pulse"/>
-    <circle cx="842" cy="148" r="18" fill="#FFFFFF" opacity="0.12"/>
-    <circle cx="732" cy="142" r="11" fill="none" stroke="#F9A8D4" stroke-width="1.4" opacity="0.75"/>
+    <circle cx="778" cy="82" r="46" fill="#FF2E93" opacity="0.16"/>
+    <circle cx="820" cy="116" r="28" fill="#FFFFFF" opacity="0.12"/>
+    <circle cx="732" cy="134" r="18" fill="none" stroke="#F9A8D4" stroke-width="1.4" opacity="0.75"/>
+    <circle cx="662" cy="158" r="9" fill="none" stroke="#FFFFFF" stroke-width="1.1" opacity="0.45"/>
 
     <g fill="#F472B6" opacity="0.34">
-      <circle cx="622" cy="58" r="2.2"/><circle cx="636" cy="58" r="2.2"/><circle cx="650" cy="58" r="2.2"/><circle cx="664" cy="58" r="2.2"/>
-      <circle cx="629" cy="70" r="1.8"/><circle cx="643" cy="70" r="1.8"/><circle cx="657" cy="70" r="1.8"/><circle cx="671" cy="70" r="1.8"/>
-      <circle cx="636" cy="82" r="1.4"/><circle cx="650" cy="82" r="1.4"/><circle cx="664" cy="82" r="1.4"/>
+      <circle cx="570" cy="34" r="2.3"/><circle cx="586" cy="34" r="2.3"/><circle cx="602" cy="34" r="2.3"/><circle cx="618" cy="34" r="2.3"/>
+      <circle cx="578" cy="48" r="1.8"/><circle cx="594" cy="48" r="1.8"/><circle cx="610" cy="48" r="1.8"/><circle cx="626" cy="48" r="1.8"/>
+      <circle cx="586" cy="62" r="1.4"/><circle cx="602" cy="62" r="1.4"/><circle cx="618" cy="62" r="1.4"/>
     </g>
 
-    <path d="M708,52 L712,63 L723,67 L712,71 L708,82 L704,71 L693,67 L704,63 Z" fill="#FFFFFF" class="star"/>
-    <path d="M852,54 L854.5,61 L861.5,63.5 L854.5,66 L852,73 L849.5,66 L842.5,63.5 L849.5,61 Z" fill="#FF2E93"/>
-    <path d="M674,174 L676,180 L682,182 L676,184 L674,190 L672,184 L666,182 L672,180 Z" fill="#F9A8D4" opacity="0.85"/>
+    <g transform="translate(778, 80) rotate(-10) scale(1.65)" class="heartPulse">
+      <path d="M 0,6.5 C -1.5,4.8 -9,0 -9,-4.5 C -9,-7.8 -6.3,-10 -3.4,-10 C -1.6,-10 -0.4,-9.1 0,-7.8 C 0.4,-9.1 1.6,-10 3.4,-10 C 6.3,-10 9,-7.8 9,-4.5 C 9,0 1.5,4.8 0,6.5 Z" fill="none" stroke="#FFFFFF" stroke-width="1.35" stroke-linejoin="round"/>
+    </g>
+    <g transform="translate(698, 126) rotate(12) scale(1.15)">
+      <path d="M 0,6.5 C -1.5,4.8 -9,0 -9,-4.5 C -9,-7.8 -6.3,-10 -3.4,-10 C -1.6,-10 -0.4,-9.1 0,-7.8 C 0.4,-9.1 1.6,-10 3.4,-10 C 6.3,-10 9,-7.8 9,-4.5 C 9,0 1.5,4.8 0,6.5 Z" fill="none" stroke="#FF2E93" stroke-width="1.6" stroke-linejoin="round"/>
+    </g>
+    <g transform="translate(848, 148) rotate(-14) scale(0.9)">
+      <path d="M 0,6.5 C -1.5,4.8 -9,0 -9,-4.5 C -9,-7.8 -6.3,-10 -3.4,-10 C -1.6,-10 -0.4,-9.1 0,-7.8 C 0.4,-9.1 1.6,-10 3.4,-10 C 6.3,-10 9,-7.8 9,-4.5 C 9,0 1.5,4.8 0,6.5 Z" fill="none" stroke="#F9A8D4" stroke-width="1.7" stroke-linejoin="round"/>
+    </g>
+    <g transform="translate(642, 74) rotate(-8) scale(0.75)">
+      <path d="M 0,6.5 C -1.5,4.8 -9,0 -9,-4.5 C -9,-7.8 -6.3,-10 -3.4,-10 C -1.6,-10 -0.4,-9.1 0,-7.8 C 0.4,-9.1 1.6,-10 3.4,-10 C 6.3,-10 9,-7.8 9,-4.5 C 9,0 1.5,4.8 0,6.5 Z" fill="none" stroke="#F472B6" stroke-width="1.8" stroke-linejoin="round"/>
+    </g>
 
-    <text x="32" y="23" font-family="'Fira Code', 'Cascadia Code', Consolas, monospace" font-size="11" fill="#A1A1AA" letter-spacing="0.8">
-      SYS.PROFILE // <tspan fill="#FFFFFF" font-weight="700">LUIZ_FABIANO</tspan>
-    </text>
-    <circle cx="614" cy="19" r="3.5" fill="#FF2E93" class="pulse"/>
-    <text x="625" y="23" font-family="'Fira Code', 'Cascadia Code', Consolas, monospace" font-size="11" fill="#F472B6" letter-spacing="0.8">
-      STATUS // INTERNSHIP_2027.1
-    </text>
+    <path d="M 692,36 Q 694.5,48.5 707,51 Q 694.5,53.5 692,66 Q 689.5,53.5 677,51 Q 689.5,48.5 692,36 Z" fill="#FFFFFF" class="twinkle"/>
+    <path d="M 852,32 Q 853.8,41.2 863,43 Q 853.8,44.8 852,54 Q 850.2,44.8 841,43 Q 850.2,41.2 852,32 Z" fill="none" stroke="#F9A8D4" stroke-width="1.35" class="twinkleSlow"/>
+    <path d="M 738,162 Q 739.5,170.5 748,172 Q 739.5,173.5 738,182 Q 736.5,173.5 728,172 Q 736.5,170.5 738,162 Z" fill="#FF2E93"/>
+    <path d="M 616,104 Q 617.2,110.8 624,112 Q 617.2,113.2 616,120 Q 614.8,113.2 608,112 Q 614.8,110.8 616,104 Z" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity="0.8"/>
+    <path d="M 822,182 Q 823.2,187.8 829,189 Q 823.2,190.2 822,196 Q 820.8,190.2 815,189 Q 820.8,187.8 822,182 Z" fill="#FFFFFF" opacity="0.75"/>
 
-    <rect x="32" y="58" width="4.5" height="114" rx="2.2" fill="url(#accentBar)"/>
-    <text x="50" y="100" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="42" font-weight="800" fill="#FFFFFF" letter-spacing="-0.8">Luiz Fabiano</text>
-    <text x="50" y="128" font-family="'Fira Code', 'Cascadia Code', Consolas, monospace" font-size="13" fill="#F472B6" font-weight="600">
-      &gt; @euLuizinho  ·  FIAP B.S. Info Systems (Jul/2027)  ·  ETEC Tech
+    <text x="44" y="92" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="44" font-weight="900" fill="#FFFFFF" letter-spacing="-0.8">LUIZ FABIANO</text>
+    <text x="44" y="124" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="15.5" font-weight="600" fill="#F9A8D4">
+      Systemic Mindset  ·  Applied AI, Tech Product, Data &amp; Cloud
     </text>
-    <text x="50" y="155" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif" font-size="13.5" fill="#E4E4E7" font-weight="500">
-      Applied AI  <tspan fill="#FF2E93">◆</tspan>  Tech Product &amp; Business  <tspan fill="#F472B6">◆</tspan>  Data / BI  <tspan fill="#FFFFFF">◆</tspan>  Cloud Ops
+    <text x="44" y="154" font-family="'Fira Code', 'Cascadia Code', Consolas, monospace" font-size="12" fill="#A1A1AA">
+      @euLuizinho  ·  FIAP Info Systems (Jul/2027)  ·  ETEC Tech  ·  São Paulo, BR
     </text>
-
-    <rect x="50" y="172" width="114" height="22" rx="4" fill="#1A1A23" stroke="#323240" stroke-width="1"/>
-    <text x="107" y="187" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10.5" fill="#D4D4D8">SÃO PAULO · BR</text>
-    <rect x="172" y="172" width="144" height="22" rx="4" fill="#2A1120" stroke="#FF2E93" stroke-width="1"/>
-    <text x="244" y="187" text-anchor="middle" font-family="'Fira Code', monospace" font-size="10.5" fill="#FBCFE8" font-weight="700">SYSTEMIC MINDSET</text>
-
-    <path d="M14,22 L14,12 L24,12" fill="none" stroke="#FF2E93" stroke-width="1.6"/>
-    <path d="M886,22 L886,12 L876,12" fill="none" stroke="#FF2E93" stroke-width="1.6"/>
-    <path d="M14,198 L14,208 L24,208" fill="none" stroke="#F472B6" stroke-width="1.6"/>
-    <path d="M886,198 L886,208 L876,208" fill="none" stroke="#FFFFFF" stroke-width="1.6"/>
   </g>
 
-  <rect x="1" y="1" width="898" height="218" rx="14" fill="none" stroke="#2F2F3D" stroke-width="1.2"/>
+  <rect x="1" y="1" width="898" height="218" rx="14" fill="none" stroke="#422036" stroke-width="1.2"/>
 </svg>

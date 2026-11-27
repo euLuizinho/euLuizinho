@@ -1,68 +1,124 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="176" viewBox="0 0 900 176">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="186" viewBox="0 0 900 186">
   <defs>
-    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0E0E13"/>
-      <stop offset="100%" stop-color="#171720"/>
+    <linearGradient id="fgBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07070A"/>
+      <stop offset="50%" stop-color="#121218"/>
+      <stop offset="100%" stop-color="#2A0E1E"/>
     </linearGradient>
-    <clipPath id="c1"><rect x="1" y="1" width="214" height="174" rx="10"/></clipPath>
-    <clipPath id="c2"><rect x="229" y="1" width="214" height="174" rx="10"/></clipPath>
-    <clipPath id="c3"><rect x="457" y="1" width="214" height="174" rx="10"/></clipPath>
-    <clipPath id="c4"><rect x="685" y="1" width="214" height="174" rx="10"/></clipPath>
+    <linearGradient id="fgRibbon" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF2E93" stop-opacity="0.08"/>
+      <stop offset="50%" stop-color="#FF2E93" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#FBCFE8" stop-opacity="0.5"/>
+    </linearGradient>
+    <radialGradient id="fgGlow1" cx="12%" cy="50%" r="22%">
+      <stop offset="0%" stop-color="#FF2E93" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#FF2E93" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="fgGlow2" cx="38%" cy="50%" r="20%">
+      <stop offset="0%" stop-color="#F472B6" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#F472B6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="fgGlow3" cx="62%" cy="50%" r="20%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="fgGlow4" cx="88%" cy="50%" r="22%">
+      <stop offset="0%" stop-color="#A1A1AA" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#A1A1AA" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="fgFrame"><rect x="1" y="1" width="898" height="184" rx="14"/></clipPath>
+    <style>
+      @keyframes bloomPulse {
+        0%, 100% { opacity: 0.92; }
+        50% { opacity: 0.5; }
+      }
+      .bloomStar { animation: bloomPulse 3.6s ease-in-out infinite; }
+    </style>
   </defs>
 
-  <g clip-path="url(#c1)">
-    <rect x="1" y="1" width="214" height="174" rx="10" fill="url(#cardBg)"/>
-    <polygon points="150,175 215,110 215,175" fill="#FF2E93" opacity="0.12"/>
-    <rect x="1" y="1" width="214" height="3.5" fill="#FF2E93"/>
-  </g>
-  <rect x="1" y="1" width="214" height="174" rx="10" fill="none" stroke="#2F2F3C" stroke-width="1"/>
-  <text x="16" y="27" font-family="'Fira Code', monospace" font-size="10.5" fill="#FF2E93" font-weight="700">[01] // AI &amp; AGENTS</text>
-  <text x="16" y="51" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#FFFFFF" font-weight="700">Applied AI</text>
-  <line x1="16" y1="62" x2="199" y2="62" stroke="#24242F" stroke-width="1"/>
-  <text x="16" y="84" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#FF2E93">◆</tspan> Prompt &amp; Agent Flows</text>
-  <text x="16" y="106" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#FF2E93">◆</tspan> Azure OpenAI (JSON Mode)</text>
-  <text x="16" y="128" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#FF2E93">◆</tspan> LGPD &amp; Human-in-the-Loop</text>
-  <text x="16" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#FF2E93">◆</tspan> Vision (YOLOv8 / OpenCV)</text>
+  <g clip-path="url(#fgFrame)">
+    <!-- Deep background -->
+    <rect width="900" height="186" fill="url(#fgBg)"/>
+    <rect width="900" height="186" fill="url(#fgGlow1)"/>
+    <rect width="900" height="186" fill="url(#fgGlow2)"/>
+    <rect width="900" height="186" fill="url(#fgGlow3)"/>
+    <rect width="900" height="186" fill="url(#fgGlow4)"/>
 
-  <g clip-path="url(#c2)">
-    <rect x="229" y="1" width="214" height="174" rx="10" fill="url(#cardBg)"/>
-    <polygon points="378,175 443,110 443,175" fill="#F472B6" opacity="0.12"/>
-    <rect x="229" y="1" width="214" height="3.5" fill="#F472B6"/>
-  </g>
-  <rect x="229" y="1" width="214" height="174" rx="10" fill="none" stroke="#2F2F3C" stroke-width="1"/>
-  <text x="244" y="27" font-family="'Fira Code', monospace" font-size="10.5" fill="#F472B6" font-weight="700">[02] // TECH PRODUCT</text>
-  <text x="244" y="51" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#FFFFFF" font-weight="700">Business &amp; Design</text>
-  <line x1="244" y1="62" x2="427" y2="62" stroke="#24242F" stroke-width="1"/>
-  <text x="244" y="84" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#F472B6">◆</tspan> Agile Canvas &amp; Discovery</text>
-  <text x="244" y="106" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#F472B6">◆</tspan> SWOT, Porter &amp; Backlog</text>
-  <text x="244" y="128" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#F472B6">◆</tspan> Unit Economics &amp; MVP</text>
-  <text x="244" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#F472B6">◆</tspan> Mermaid Architecture</text>
+    <!-- Flowing wave underlays -->
+    <path d="M0,160 C180,110 380,180 560,120 C680,82 810,105 900,65 L900,186 L0,186 Z" fill="#0D0D14" opacity="0.7"/>
+    <path d="M0,170 C220,140 480,175 720,130 C815,108 870,122 900,100 L900,186 L0,186 Z" fill="#16101B" opacity="0.5"/>
 
-  <g clip-path="url(#c3)">
-    <rect x="457" y="1" width="214" height="174" rx="10" fill="url(#cardBg)"/>
-    <polygon points="606,175 671,110 671,175" fill="#FFFFFF" opacity="0.10"/>
-    <rect x="457" y="1" width="214" height="3.5" fill="#FFFFFF"/>
-  </g>
-  <rect x="457" y="1" width="214" height="174" rx="10" fill="none" stroke="#2F2F3C" stroke-width="1"/>
-  <text x="472" y="27" font-family="'Fira Code', monospace" font-size="10.5" fill="#FFFFFF" font-weight="700">[03] // DATA &amp; BI</text>
-  <text x="472" y="51" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#FFFFFF" font-weight="700">Analytics &amp; DW</text>
-  <line x1="472" y1="62" x2="655" y2="62" stroke="#24242F" stroke-width="1"/>
-  <text x="472" y="84" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#FFFFFF">◆</tspan> Star Schema Modeling</text>
-  <text x="472" y="106" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#FFFFFF">◆</tspan> Storage Sizing &amp; Growth</text>
-  <text x="472" y="128" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#FFFFFF">◆</tspan> Analytical SQL &amp; KPIs</text>
-  <text x="472" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#FFFFFF">◆</tspan> Power BI &amp; DAX</text>
+    <!-- Connecting ribbon across all cards -->
+    <path d="M20,145 C180,100 350,160 520,105 C650,65 790,110 880,78" fill="none" stroke="url(#fgRibbon)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M60,160 C200,125 400,168 600,125 C730,92 830,120 890,98" fill="none" stroke="#FFFFFF" stroke-width="0.8" opacity="0.25" stroke-linecap="round"/>
 
-  <g clip-path="url(#c4)">
-    <rect x="685" y="1" width="214" height="174" rx="10" fill="url(#cardBg)"/>
-    <polygon points="834,175 899,110 899,175" fill="#A1A1AA" opacity="0.12"/>
-    <rect x="685" y="1" width="214" height="3.5" fill="#A1A1AA"/>
+    <!-- Card 1: Applied AI -->
+    <rect x="16" y="14" width="200" height="155" rx="16" fill="#0E0E14" stroke="#FF2E93" stroke-width="1.0" stroke-opacity="0.5"/>
+    <circle cx="180" cy="142" r="34" fill="#FF2E93" opacity="0.08"/>
+    <circle cx="190" cy="130" r="18" fill="none" stroke="#FF2E93" stroke-width="0.9" opacity="0.3"/>
+    <!-- Hollow heart accent -->
+    <g transform="translate(185, 32) rotate(-12) scale(0.65)">
+      <path d="M 0,6.5 C -1.5,4.8 -9,0 -9,-4.5 C -9,-7.8 -6.3,-10 -3.4,-10 C -1.6,-10 -0.4,-9.1 0,-7.8 C 0.4,-9.1 1.6,-10 3.4,-10 C 6.3,-10 9,-7.8 9,-4.5 C 9,0 1.5,4.8 0,6.5 Z" fill="none" stroke="#FF2E93" stroke-width="1.8" stroke-linejoin="round"/>
+    </g>
+    <text x="36" y="42" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" fill="#FFFFFF" font-weight="700">Applied AI</text>
+    <text x="36" y="60" font-family="'Fira Code', monospace" font-size="9" fill="#FF2E93" opacity="0.75">♡ artificial intelligence</text>
+    <line x1="36" y1="68" x2="196" y2="68" stroke="#FF2E93" stroke-width="0.6" opacity="0.3"/>
+    <text x="36" y="88" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#FF2E93">✦</tspan> Prompt &amp; Agent Flows</text>
+    <text x="36" y="108" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#FF2E93">✦</tspan> Azure OpenAI (JSON Mode)</text>
+    <text x="36" y="128" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#FF2E93">✦</tspan> LGPD &amp; Human-in-the-Loop</text>
+    <text x="36" y="148" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#FF2E93">✦</tspan> Vision (YOLOv8 / OpenCV)</text>
+
+    <!-- Card 2: Tech Product -->
+    <rect x="236" y="14" width="200" height="155" rx="16" fill="#0E0E14" stroke="#F472B6" stroke-width="1.0" stroke-opacity="0.5"/>
+    <circle cx="400" cy="142" r="34" fill="#F472B6" opacity="0.08"/>
+    <circle cx="410" cy="130" r="18" fill="none" stroke="#F472B6" stroke-width="0.9" opacity="0.3"/>
+    <!-- Hollow star accent -->
+    <path d="M 406,28 Q 407.5,35.5 415,37 Q 407.5,38.5 406,46 Q 404.5,38.5 397,37 Q 404.5,35.5 406,28 Z" fill="none" stroke="#F472B6" stroke-width="1.2" class="bloomStar"/>
+    <text x="256" y="42" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" fill="#FFFFFF" font-weight="700">Business &amp; Design</text>
+    <text x="256" y="60" font-family="'Fira Code', monospace" font-size="9" fill="#F472B6" opacity="0.75">✧ tech product</text>
+    <line x1="256" y1="68" x2="416" y2="68" stroke="#F472B6" stroke-width="0.6" opacity="0.3"/>
+    <text x="256" y="88" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#F472B6">✦</tspan> Agile Canvas &amp; Discovery</text>
+    <text x="256" y="108" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#F472B6">✦</tspan> SWOT, Porter &amp; Backlog</text>
+    <text x="256" y="128" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#F472B6">✦</tspan> Unit Economics &amp; MVP</text>
+    <text x="256" y="148" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#F472B6">✦</tspan> Mermaid Architecture</text>
+
+    <!-- Card 3: Data & BI -->
+    <rect x="456" y="14" width="200" height="155" rx="16" fill="#0E0E14" stroke="#FFFFFF" stroke-width="0.8" stroke-opacity="0.3"/>
+    <circle cx="620" cy="142" r="34" fill="#FFFFFF" opacity="0.05"/>
+    <circle cx="630" cy="130" r="18" fill="none" stroke="#FFFFFF" stroke-width="0.8" opacity="0.2"/>
+    <!-- Micro hollow heart -->
+    <g transform="translate(626, 32) rotate(10) scale(0.55)">
+      <path d="M 0,6.5 C -1.5,4.8 -9,0 -9,-4.5 C -9,-7.8 -6.3,-10 -3.4,-10 C -1.6,-10 -0.4,-9.1 0,-7.8 C 0.4,-9.1 1.6,-10 3.4,-10 C 6.3,-10 9,-7.8 9,-4.5 C 9,0 1.5,4.8 0,6.5 Z" fill="none" stroke="#FFFFFF" stroke-width="2.0" stroke-linejoin="round" opacity="0.6"/>
+    </g>
+    <text x="476" y="42" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" fill="#FFFFFF" font-weight="700">Analytics &amp; DW</text>
+    <text x="476" y="60" font-family="'Fira Code', monospace" font-size="9" fill="#FFFFFF" opacity="0.5">✧ data &amp; bi</text>
+    <line x1="476" y1="68" x2="636" y2="68" stroke="#FFFFFF" stroke-width="0.5" opacity="0.2"/>
+    <text x="476" y="88" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#FFFFFF">✦</tspan> Star Schema Modeling</text>
+    <text x="476" y="108" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#FFFFFF">✦</tspan> Storage Sizing &amp; Growth</text>
+    <text x="476" y="128" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#FFFFFF">✦</tspan> Analytical SQL &amp; KPIs</text>
+    <text x="476" y="148" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#FFFFFF">✦</tspan> Power BI &amp; DAX</text>
+
+    <!-- Card 4: Cloud Ops -->
+    <rect x="676" y="14" width="200" height="155" rx="16" fill="#0E0E14" stroke="#A1A1AA" stroke-width="0.8" stroke-opacity="0.35"/>
+    <circle cx="840" cy="142" r="34" fill="#A1A1AA" opacity="0.06"/>
+    <circle cx="850" cy="130" r="18" fill="none" stroke="#D4D4D8" stroke-width="0.8" opacity="0.2"/>
+    <!-- Hollow star accent -->
+    <path d="M 846,28 Q 847.5,35.5 855,37 Q 847.5,38.5 846,46 Q 844.5,38.5 837,37 Q 844.5,35.5 846,28 Z" fill="none" stroke="#D4D4D8" stroke-width="1.1" opacity="0.6"/>
+    <text x="696" y="42" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="17" fill="#FFFFFF" font-weight="700">Infra &amp; Automation</text>
+    <text x="696" y="60" font-family="'Fira Code', monospace" font-size="9" fill="#D4D4D8" opacity="0.5">✧ cloud ops</text>
+    <line x1="696" y1="68" x2="856" y2="68" stroke="#A1A1AA" stroke-width="0.5" opacity="0.2"/>
+    <text x="696" y="88" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#D4D4D8">✦</tspan> Linux, Shell &amp; SSH</text>
+    <text x="696" y="108" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#D4D4D8">✦</tspan> AWS (Lambda/DDB/EC2)</text>
+    <text x="696" y="128" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#D4D4D8">✦</tspan> Docker, Nginx &amp; Redis</text>
+    <text x="696" y="148" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#D4D4D8">✦</tspan> REST APIs, cURL &amp; Git</text>
+
+    <!-- Decorative floating elements -->
+    <g fill="#F472B6" opacity="0.3">
+      <circle cx="225" cy="90" r="1.5"/><circle cx="225" cy="100" r="1.2"/>
+      <circle cx="445" cy="88" r="1.5"/><circle cx="445" cy="98" r="1.2"/>
+      <circle cx="665" cy="90" r="1.5"/><circle cx="665" cy="100" r="1.2"/>
+    </g>
   </g>
-  <rect x="685" y="1" width="214" height="174" rx="10" fill="none" stroke="#2F2F3C" stroke-width="1"/>
-  <text x="700" y="27" font-family="'Fira Code', monospace" font-size="10.5" fill="#D4D4D8" font-weight="700">[04] // CLOUD OPS</text>
-  <text x="700" y="51" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#FFFFFF" font-weight="700">Infra &amp; Automation</text>
-  <line x1="700" y1="62" x2="883" y2="62" stroke="#24242F" stroke-width="1"/>
-  <text x="700" y="84" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#D4D4D8">◆</tspan> Linux, Shell &amp; SSH</text>
-  <text x="700" y="106" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#D4D4D8">◆</tspan> AWS (Lambda/DDB/EC2)</text>
-  <text x="700" y="128" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#D4D4D8">◆</tspan> Docker, Nginx &amp; Redis</text>
-  <text x="700" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#E4E4E7"><tspan fill="#D4D4D8">◆</tspan> REST APIs, cURL &amp; Git</text>
+
+  <rect x="1" y="1" width="898" height="184" rx="14" fill="none" stroke="#422036" stroke-width="1.2"/>
 </svg>

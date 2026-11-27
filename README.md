@@ -21,7 +21,7 @@
 
 <br>
 
-### ✦ `01 // > whoami`
+### ✦ `> whoami`
 
 ```json
 {
@@ -50,7 +50,7 @@
 <div align="center"><img src="./assets/divider.svg" width="100%" alt="✦" /></div>
 <br>
 
-### ✦ `02 // > cat skills.txt`
+### ✦ `> cat skills.txt`
 
 <div align="center">
   <p>
@@ -89,7 +89,7 @@
 <div align="center"><img src="./assets/divider.svg" width="100%" alt="✦" /></div>
 <br>
 
-### ✦ `03 // > ls ./portfolio`
+### ✦ `> ls ./portfolio`
 
 | Projeto | Foco &amp; Impacto | Arquitetura &amp; Stack | Status / Links |
 | :--- | :--- | :--- | :--- |
@@ -114,7 +114,7 @@
 <div align="center"><img src="./assets/divider.svg" width="100%" alt="✦" /></div>
 <br>
 
-### ✦ `04 // > cat education.log`
+### ✦ `> cat education.log`
 
 | Formação | Instituição | Período | Destaques &amp; Base |
 | :--- | :--- | :--- | :--- |
@@ -141,7 +141,7 @@
 <div align="center"><img src="./assets/divider.svg" width="100%" alt="✦" /></div>
 <br>
 
-### ✦ `05 // > now_playing --spotify`
+### ✦ `> now_playing --spotify`
 
 <div align="center">
   <a href="https://open.spotify.com">
@@ -153,7 +153,7 @@
 <div align="center"><img src="./assets/divider.svg" width="100%" alt="✦" /></div>
 <br>
 
-### ✦ `06 // > ./generate_snake.sh`
+### ✦ `> ./generate_snake.sh`
 
 <div align="center">
   <picture>
